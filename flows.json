@@ -3889,64 +3889,10 @@
         "wires": []
     },
     {
-        "id": "8a7c2839239a648b",
-        "type": "mqtt in",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "topic": "CT1/Mensaje1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "27728839ccdec9b8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 660,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3dc644628b754b4c",
-        "type": "mqtt in",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "topic": "CT1/Mensaje2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "27728839ccdec9b8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 660,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "56c3416afa830829",
-        "type": "debug",
-        "z": "c7af699a810ac2fd",
-        "name": "debug status",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 140,
-        "wires": []
-    },
-    {
         "id": "0a5ce4fbb57449c0",
         "type": "inject",
         "z": "c7af699a810ac2fd",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -3960,8 +3906,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 190,
-        "y": 100,
+        "x": 510,
+        "y": 60,
         "wires": [
             [
                 "514ed2f46146b09e",
@@ -3973,6 +3919,7 @@
         "id": "64e692e91427c82d",
         "type": "inject",
         "z": "c7af699a810ac2fd",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -3986,8 +3933,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 190,
-        "y": 140,
+        "x": 510,
+        "y": 100,
         "wires": [
             [
                 "514ed2f46146b09e",
@@ -4011,29 +3958,16 @@
         "templateScope": "global",
         "className": "",
         "x": 130,
-        "y": 660,
+        "y": 60,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "7b8f0884788c2a15",
-        "type": "status",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "scope": null,
-        "x": 840,
-        "y": 140,
-        "wires": [
-            [
-                "56c3416afa830829"
-            ]
         ]
     },
     {
         "id": "514ed2f46146b09e",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
+        "d": true,
         "group": "34df9b256d31d87a",
         "name": "",
         "order": 3,
@@ -4045,7 +3979,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 400,
+        "x": 640,
         "y": 60,
         "wires": [
             []
@@ -4055,6 +3989,7 @@
         "id": "0fdcc8e832814fda",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
+        "d": true,
         "group": "34df9b256d31d87a",
         "name": "",
         "order": 3,
@@ -4066,92 +4001,10 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 380,
-        "y": 140,
+        "x": 640,
+        "y": 100,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "62d117a6a16a8faf",
-        "type": "ui_template",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "group": "34df9b256d31d87a",
-        "name": "cuadro multi",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "format": "<div id=\"miDiv\">\n    Sin valor <!-- Aquí se mostrará el valor de msg.payload -->\n</div>\n\n<script>\n    (function(scope) {\n        // Función para actualizar el contenido del div\n        function updateDivContent(payload) {\n            var div = document.getElementById('miDiv');\n            div.innerHTML = \"El valor de msg.payload es: \" + payload;\n        }\n\n        // Obtener el valor inicial de msg.payload y actualizar el div\n        //updateDivContent(scope.msg.payload);\n\n        // Listener para cambios en el mensaje\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload !== undefined) {\n                updateDivContent(msg.payload);\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1070,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "29ce147a5d0af906",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "17",
-        "payloadType": "num",
-        "x": 190,
-        "y": 280,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "55f0a50a14490256",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 190,
-        "y": 320,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
         ]
     },
     {
@@ -4168,7 +4021,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 800,
+        "y": 200,
         "wires": [
             [
                 "9c8046a651785090"
@@ -4188,235 +4041,7 @@
         "finalize": "",
         "libs": [],
         "x": 120,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "da51266c28040af1",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "2",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 770,
-        "y": 400,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "cbd0471b3a9097d2",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "2",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "18",
-        "payloadType": "num",
-        "x": 770,
-        "y": 360,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "050f818175fe2e93",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "3",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 770,
-        "y": 480,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "86eb527b68997a7f",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "3",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "18",
-        "payloadType": "num",
-        "x": 770,
-        "y": 440,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "4a5a69440f5f7dba",
-        "type": "function",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "name": "function 10",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 260,
-        "wires": [
-            [
-                "62d117a6a16a8faf",
-                "ce5dfd80ed6ba75d"
-            ]
-        ]
-    },
-    {
-        "id": "f7b57e4971ef51a8",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "25",
-        "payloadType": "num",
-        "x": 190,
-        "y": 360,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "9abadc6df1106b79",
-        "type": "inject",
-        "z": "c7af699a810ac2fd",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "NULL",
-        "payloadType": "str",
-        "x": 190,
-        "y": 400,
-        "wires": [
-            [
-                "4a5a69440f5f7dba"
-            ]
-        ]
-    },
-    {
-        "id": "ce5dfd80ed6ba75d",
-        "type": "ui_template",
-        "z": "c7af699a810ac2fd",
-        "d": true,
-        "group": "34df9b256d31d87a",
-        "name": "multiple 1",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<div class=\"box\" id=\"box-group1\">\n    <div class=\"inner-box\" id=\"box11\">\n        Esperando valor...\n    </div>\n    <div class=\"inner-box\" id=\"box12\">\n        Esperando valor...\n    </div>\n    <div class=\"inner-box\" id=\"box13\">\n        Esperando valor...\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            setBoxBackground(`box1-${msg.topic}`, msg.payload);\n            //var div = document.getElementById('yourDiv');\n            //div.innerHTML = \"El valor de msg.payload es: \" + msg.payload;\n            }\n        });\n        \n    })(scope);\n</script>",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 1060,
-        "y": 340,
+        "y": 140,
         "wires": [
             []
         ]
@@ -4434,7 +4059,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 800,
+        "y": 200,
         "wires": [
             [
                 "e43414a95f422b4e"
@@ -4457,7 +4082,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 800,
+        "y": 200,
         "wires": [
             []
         ]
@@ -4476,7 +4101,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 860,
+        "y": 260,
         "wires": [
             [
                 "8beaf866adf44952"
@@ -4496,7 +4121,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 860,
+        "y": 260,
         "wires": [
             [
                 "6fd47970a93389c0"
@@ -4519,7 +4144,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 860,
+        "y": 260,
         "wires": [
             []
         ]
@@ -4538,7 +4163,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 920,
+        "y": 320,
         "wires": [
             [
                 "adb954f1c09b731a"
@@ -4558,7 +4183,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 920,
+        "y": 320,
         "wires": [
             [
                 "3ce9844b582385ab"
@@ -4581,7 +4206,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 920,
+        "y": 320,
         "wires": [
             []
         ]
@@ -4600,7 +4225,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 980,
+        "y": 380,
         "wires": [
             [
                 "408d1b3cf406a394"
@@ -4620,7 +4245,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 980,
+        "y": 380,
         "wires": [
             [
                 "0a04540d973dc310"
@@ -4643,7 +4268,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 980,
+        "y": 380,
         "wires": [
             []
         ]
@@ -4662,7 +4287,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1040,
+        "y": 440,
         "wires": [
             [
                 "423f8ff5d79b1d65"
@@ -4682,7 +4307,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1040,
+        "y": 440,
         "wires": [
             [
                 "f7a6550b30368e91"
@@ -4705,7 +4330,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 1040,
+        "y": 440,
         "wires": [
             []
         ]
@@ -4724,7 +4349,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1100,
+        "y": 500,
         "wires": [
             [
                 "169dcb13bdbb80a9"
@@ -4744,7 +4369,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1100,
+        "y": 500,
         "wires": [
             [
                 "aecd2f503b916c5d"
@@ -4767,7 +4392,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 1100,
+        "y": 500,
         "wires": [
             []
         ]
@@ -4786,7 +4411,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1160,
+        "y": 560,
         "wires": [
             [
                 "2eddb71adcc13d99"
@@ -4806,7 +4431,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1160,
+        "y": 560,
         "wires": [
             [
                 "50a8b6abbf512b23"
@@ -4829,7 +4454,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 1160,
+        "y": 560,
         "wires": [
             []
         ]
@@ -4848,7 +4473,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1220,
+        "y": 620,
         "wires": [
             [
                 "107930ebc10b1d18"
@@ -4868,7 +4493,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1220,
+        "y": 620,
         "wires": [
             [
                 "8200ef5a14a817e1"
@@ -4891,7 +4516,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 1220,
+        "y": 620,
         "wires": [
             []
         ]
@@ -4910,7 +4535,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1280,
+        "y": 680,
         "wires": [
             [
                 "f045b8eeae67a30a"
@@ -4930,7 +4555,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1280,
+        "y": 680,
         "wires": [
             [
                 "e5f77c1de5e2099a"
@@ -4953,7 +4578,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 1280,
+        "y": 680,
         "wires": [
             []
         ]
@@ -4972,7 +4597,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1340,
+        "y": 740,
         "wires": [
             [
                 "393122b12d8be44c"
@@ -4992,7 +4617,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1340,
+        "y": 740,
         "wires": [
             [
                 "658d2739c08680cf"
@@ -5015,7 +4640,7 @@
         "templateScope": "local",
         "className": "",
         "x": 550,
-        "y": 1340,
+        "y": 740,
         "wires": [
             []
         ]
@@ -5034,7 +4659,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1400,
+        "y": 800,
         "wires": [
             [
                 "fc7611deb51972ed"
@@ -5054,7 +4679,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1400,
+        "y": 800,
         "wires": [
             [
                 "3391411b340ad491"
@@ -5077,7 +4702,7 @@
         "templateScope": "local",
         "className": "",
         "x": 550,
-        "y": 1400,
+        "y": 800,
         "wires": [
             []
         ]
@@ -5096,7 +4721,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1460,
+        "y": 860,
         "wires": [
             [
                 "dad111563cfa635c"
@@ -5116,7 +4741,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1460,
+        "y": 860,
         "wires": [
             [
                 "6de729277b8a703f"
@@ -5139,7 +4764,193 @@
         "templateScope": "local",
         "className": "",
         "x": 550,
-        "y": 1460,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42892a47dd658e44",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT13/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "bfce1252d90b26f2"
+            ]
+        ]
+    },
+    {
+        "id": "bfce1252d90b26f2",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "50a07a31a59f98f9"
+            ]
+        ]
+    },
+    {
+        "id": "50a07a31a59f98f9",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 13",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"13\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cba8680ef8f7e8b",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT14/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "6afa889540819634"
+            ]
+        ]
+    },
+    {
+        "id": "6afa889540819634",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "08c12e775620a84d"
+            ]
+        ]
+    },
+    {
+        "id": "08c12e775620a84d",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 14",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"14\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5090d1ac7063398",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT15/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "bd0869eae3276f0c"
+            ]
+        ]
+    },
+    {
+        "id": "bd0869eae3276f0c",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1040,
+        "wires": [
+            [
+                "7746a16dd7b76498"
+            ]
+        ]
+    },
+    {
+        "id": "7746a16dd7b76498",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 15",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"15\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 1040,
         "wires": [
             []
         ]

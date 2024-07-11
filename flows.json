@@ -4486,7 +4486,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
                 "8beaf866adf44952"
@@ -4506,7 +4506,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
                 "6fd47970a93389c0"
@@ -4529,7 +4529,627 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 880,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b215d817455febf",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT3/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "adb954f1c09b731a"
+            ]
+        ]
+    },
+    {
+        "id": "adb954f1c09b731a",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "3ce9844b582385ab"
+            ]
+        ]
+    },
+    {
+        "id": "3ce9844b582385ab",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"3\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53936f953451ca35",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT4/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "408d1b3cf406a394"
+            ]
+        ]
+    },
+    {
+        "id": "408d1b3cf406a394",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "0a04540d973dc310"
+            ]
+        ]
+    },
+    {
+        "id": "0a04540d973dc310",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"4\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0b295035aaa8ac4",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT5/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "423f8ff5d79b1d65"
+            ]
+        ]
+    },
+    {
+        "id": "423f8ff5d79b1d65",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1040,
+        "wires": [
+            [
+                "f7a6550b30368e91"
+            ]
+        ]
+    },
+    {
+        "id": "f7a6550b30368e91",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"5\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e468cd76e95b7f6",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT6/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1100,
+        "wires": [
+            [
+                "169dcb13bdbb80a9"
+            ]
+        ]
+    },
+    {
+        "id": "169dcb13bdbb80a9",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1100,
+        "wires": [
+            [
+                "aecd2f503b916c5d"
+            ]
+        ]
+    },
+    {
+        "id": "aecd2f503b916c5d",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"6\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16d5c59414181f09",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT7/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1160,
+        "wires": [
+            [
+                "2eddb71adcc13d99"
+            ]
+        ]
+    },
+    {
+        "id": "2eddb71adcc13d99",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1160,
+        "wires": [
+            [
+                "50a8b6abbf512b23"
+            ]
+        ]
+    },
+    {
+        "id": "50a8b6abbf512b23",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"7\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd0d7c6bed6cfe7f",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT8/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1220,
+        "wires": [
+            [
+                "107930ebc10b1d18"
+            ]
+        ]
+    },
+    {
+        "id": "107930ebc10b1d18",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1220,
+        "wires": [
+            [
+                "8200ef5a14a817e1"
+            ]
+        ]
+    },
+    {
+        "id": "8200ef5a14a817e1",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"8\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a50d828f62160c41",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT9/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1280,
+        "wires": [
+            [
+                "f045b8eeae67a30a"
+            ]
+        ]
+    },
+    {
+        "id": "f045b8eeae67a30a",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1280,
+        "wires": [
+            [
+                "e5f77c1de5e2099a"
+            ]
+        ]
+    },
+    {
+        "id": "e5f77c1de5e2099a",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"9\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42230989746fc6ac",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT10/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1340,
+        "wires": [
+            [
+                "393122b12d8be44c"
+            ]
+        ]
+    },
+    {
+        "id": "393122b12d8be44c",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1340,
+        "wires": [
+            [
+                "658d2739c08680cf"
+            ]
+        ]
+    },
+    {
+        "id": "658d2739c08680cf",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 10",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"10\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b761119946523fb8",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT11/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1400,
+        "wires": [
+            [
+                "fc7611deb51972ed"
+            ]
+        ]
+    },
+    {
+        "id": "fc7611deb51972ed",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1400,
+        "wires": [
+            [
+                "3391411b340ad491"
+            ]
+        ]
+    },
+    {
+        "id": "3391411b340ad491",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"11\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "508efcf25d93a962",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT12/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1460,
+        "wires": [
+            [
+                "dad111563cfa635c"
+            ]
+        ]
+    },
+    {
+        "id": "dad111563cfa635c",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1460,
+        "wires": [
+            [
+                "6de729277b8a703f"
+            ]
+        ]
+    },
+    {
+        "id": "6de729277b8a703f",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 12",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"12\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 1460,
         "wires": [
             []
         ]

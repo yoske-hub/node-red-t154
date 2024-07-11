@@ -4423,7 +4423,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"box1-4\">\n        {{ctx}}\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    /* cambiar id cajas*/\n        var ctx = 1;\n        document.querySelectorAll('.flex-row .inner-box').forEach(function(box) {\n            var currentId = box.id; // Obtener el ID actual\n            box.id = currentId.replace('{{ctx}}', ctx); // Reemplazar {{ctx}} con el valor de ctx\n        });        \n        // var div = document.getElementById(`box-group-${ctx}`);\n        // div.textContent = \"0\"+ctx;\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"box1-4\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    /* cambiar id cajas*/\n        var ctx = 1;\n        document.querySelectorAll('.flex-row .inner-box').forEach(function(box) {\n            var currentId = box.id; // Obtener el ID actual\n            box.id = currentId.replace('{{ctx}}', ctx); // Reemplazar {{ctx}} con el valor de ctx\n        });        \n        // var div = document.getElementById(`box-group-${ctx}`);\n        // div.textContent = \"0\"+ctx;\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
@@ -4470,6 +4470,27 @@
             [
                 "01f3da45c3f0170b"
             ]
+        ]
+    },
+    {
+        "id": "e43414a95f422b4e",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"box1-4\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"1\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 860,
+        "wires": [
+            []
         ]
     },
     {

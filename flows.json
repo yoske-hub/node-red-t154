@@ -909,8 +909,8 @@
         "protocol": "http",
         "port": "1880",
         "baseurl": "/ui",
-        "instancehash": "",
-        "server": "",
+        "instancehash": "vwi1xw07kckfv2zsuq3vl7b4kdy6eitx2oj4yjwyygn4lzzdlj951d7oqao17d21",
+        "server": "nodered03.remote-red.com",
         "region": "us"
     },
     {

@@ -902,6 +902,18 @@
         "region": "us"
     },
     {
+        "id": "cf93e210eee30876",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "",
+        "server": "",
+        "region": "us"
+    },
+    {
         "id": "6ab60e39df9124a8",
         "type": "ui_media",
         "z": "591e1866063ff770",
@@ -2851,7 +2863,7 @@
         "id": "381e76869b9723cb",
         "type": "remote-access",
         "z": "591e1866063ff770",
-        "confignode": "01e96365ce35712b",
+        "confignode": "cf93e210eee30876",
         "name": "Dashboard app",
         "verbose": 0,
         "x": 1160,

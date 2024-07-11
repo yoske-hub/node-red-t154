@@ -890,18 +890,6 @@
         "width": 9
     },
     {
-        "id": "01e96365ce35712b",
-        "type": "remote-config",
-        "name": "Temperatura raspberry",
-        "host": "localhost",
-        "protocol": "http",
-        "port": "1880",
-        "baseurl": "/ui",
-        "instancehash": "jtlg16y9erfgr5f6sfurro4t120fr932r5qxev1mi9qgvuxk4mv9fwiccnekwu9e",
-        "server": "nodered04.remote-red.com",
-        "region": "us"
-    },
-    {
         "id": "cf93e210eee30876",
         "type": "remote-config",
         "name": "Node-RED UI",

@@ -4422,23 +4422,6 @@
         ]
     },
     {
-        "id": "daa8ea59597e77b0",
-        "type": "debug",
-        "z": "c7af699a810ac2fd",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 740,
-        "wires": []
-    },
-    {
         "id": "9c8046a651785090",
         "type": "function",
         "z": "c7af699a810ac2fd",
@@ -4454,8 +4437,7 @@
         "y": 800,
         "wires": [
             [
-                "e43414a95f422b4e",
-                "daa8ea59597e77b0"
+                "e43414a95f422b4e"
             ]
         ]
     },
@@ -4484,7 +4466,6 @@
         "id": "f50a9025b5324ec9",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT2/#",
         "qos": "2",
@@ -4506,7 +4487,6 @@
         "id": "8beaf866adf44952",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function 1",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4527,7 +4507,6 @@
         "id": "6fd47970a93389c0",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 2",
         "order": 1,
@@ -4549,7 +4528,6 @@
         "id": "4b215d817455febf",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT3/#",
         "qos": "2",
@@ -4571,7 +4549,6 @@
         "id": "adb954f1c09b731a",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4592,7 +4569,6 @@
         "id": "3ce9844b582385ab",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 3",
         "order": 1,
@@ -4614,7 +4590,6 @@
         "id": "53936f953451ca35",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT4/#",
         "qos": "2",
@@ -4636,7 +4611,6 @@
         "id": "408d1b3cf406a394",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4657,7 +4631,6 @@
         "id": "0a04540d973dc310",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 4",
         "order": 1,
@@ -4679,7 +4652,6 @@
         "id": "a0b295035aaa8ac4",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT5/#",
         "qos": "2",
@@ -4701,7 +4673,6 @@
         "id": "423f8ff5d79b1d65",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4722,7 +4693,6 @@
         "id": "f7a6550b30368e91",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 5",
         "order": 1,
@@ -4744,7 +4714,6 @@
         "id": "3e468cd76e95b7f6",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT6/#",
         "qos": "2",
@@ -4766,7 +4735,6 @@
         "id": "169dcb13bdbb80a9",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4787,7 +4755,6 @@
         "id": "aecd2f503b916c5d",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 6",
         "order": 1,
@@ -4809,7 +4776,6 @@
         "id": "16d5c59414181f09",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT7/#",
         "qos": "2",
@@ -4831,7 +4797,6 @@
         "id": "2eddb71adcc13d99",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4852,7 +4817,6 @@
         "id": "50a8b6abbf512b23",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 7",
         "order": 1,
@@ -4874,7 +4838,6 @@
         "id": "dd0d7c6bed6cfe7f",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT8/#",
         "qos": "2",
@@ -4896,7 +4859,6 @@
         "id": "107930ebc10b1d18",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4917,7 +4879,6 @@
         "id": "8200ef5a14a817e1",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 8",
         "order": 1,
@@ -4939,7 +4900,6 @@
         "id": "a50d828f62160c41",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT9/#",
         "qos": "2",
@@ -4961,7 +4921,6 @@
         "id": "f045b8eeae67a30a",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -4982,7 +4941,6 @@
         "id": "e5f77c1de5e2099a",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 9",
         "order": 1,
@@ -5004,7 +4962,6 @@
         "id": "42230989746fc6ac",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT10/#",
         "qos": "2",
@@ -5026,7 +4983,6 @@
         "id": "393122b12d8be44c",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -5047,7 +5003,6 @@
         "id": "658d2739c08680cf",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 10",
         "order": 1,
@@ -5069,7 +5024,6 @@
         "id": "b761119946523fb8",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT11/#",
         "qos": "2",
@@ -5091,7 +5045,6 @@
         "id": "fc7611deb51972ed",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -5112,7 +5065,6 @@
         "id": "3391411b340ad491",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 11",
         "order": 1,
@@ -5134,7 +5086,6 @@
         "id": "508efcf25d93a962",
         "type": "mqtt in",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "",
         "topic": "CT12/#",
         "qos": "2",
@@ -5156,7 +5107,6 @@
         "id": "dad111563cfa635c",
         "type": "function",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "name": "Match function",
         "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
@@ -5177,7 +5127,6 @@
         "id": "6de729277b8a703f",
         "type": "ui_template",
         "z": "c7af699a810ac2fd",
-        "d": true,
         "group": "34df9b256d31d87a",
         "name": "multiple 12",
         "order": 1,
@@ -5219,9 +5168,7 @@
         "x": 370,
         "y": 540,
         "wires": [
-            [
-                "e43414a95f422b4e"
-            ]
+            []
         ]
     },
     {
@@ -5248,9 +5195,7 @@
         "x": 370,
         "y": 580,
         "wires": [
-            [
-                "e43414a95f422b4e"
-            ]
+            []
         ]
     },
     {
@@ -5277,9 +5222,7 @@
         "x": 370,
         "y": 620,
         "wires": [
-            [
-                "e43414a95f422b4e"
-            ]
+            []
         ]
     },
     {
@@ -5306,9 +5249,7 @@
         "x": 380,
         "y": 660,
         "wires": [
-            [
-                "e43414a95f422b4e"
-            ]
+            []
         ]
     },
     {

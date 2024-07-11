@@ -905,7 +905,7 @@
         "id": "cf93e210eee30876",
         "type": "remote-config",
         "name": "Node-RED UI",
-        "host": "localhos",
+        "host": "localhost",
         "protocol": "http",
         "port": "1880",
         "baseurl": "/ui",

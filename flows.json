@@ -1028,16 +1028,6 @@
         "width": 6
     },
     {
-        "id": "272ab37939c46393",
-        "type": "ui_spacer",
-        "z": "c7af699a810ac2fd",
-        "name": "spacer",
-        "group": "34df9b256d31d87a",
-        "order": 2,
-        "width": 6,
-        "height": 1
-    },
-    {
         "id": "6ab60e39df9124a8",
         "type": "ui_media",
         "z": "591e1866063ff770",
@@ -4106,7 +4096,7 @@
         "d": true,
         "group": "34df9b256d31d87a",
         "name": "",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
         "format": "<div id=\"dynamic-background2\" class=\"fondo\">\n    {{msg.payload}}Este es un texto con fondo dinámico\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var element = document.getElementById('dynamic-background2');\n            if (payload === 0) {\n                element.style.backgroundColor = '#ff0000'; // Color para 0\n                element.style.color = '#699FF9';\n            } else if (payload === 1) {\n                element.style.backgroundColor = '#07a633'; // Color para 1\n                element.style.color = 'black';\n            }\n        });\n    })(scope);\n</script>",
@@ -4128,7 +4118,7 @@
         "d": true,
         "group": "34df9b256d31d87a",
         "name": "",
-        "order": 4,
+        "order": 3,
         "width": 0,
         "height": 0,
         "format": "<div id=\"dynamic-background\" class=\"bordered-box\">\n    {{msg.payload}}Este es un texto con fondo dinámico\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var element = document.getElementById('dynamic-background');\n            if (payload === 0) {\n                element.style.backgroundColor = '#ff0000'; // Color para 0\n                element.style.color = '#699FF9';\n            } else if (payload === 1) {\n                element.style.backgroundColor = '#07a633'; // Color para 1\n                element.style.color = 'black';\n            }\n        });\n    })(scope);\n</script>",
@@ -4334,7 +4324,7 @@
         "name": "multiple 3",
         "order": 1,
         "width": 6,
-        "height": 4,
+        "height": 5,
         "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"3\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": false,

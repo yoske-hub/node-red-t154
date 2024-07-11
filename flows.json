@@ -893,7 +893,7 @@
         "id": "01e96365ce35712b",
         "type": "remote-config",
         "name": "Temperatura raspberry",
-        "host": "192.168.1.101",
+        "host": "localhost",
         "protocol": "http",
         "port": "1880",
         "baseurl": "/ui",

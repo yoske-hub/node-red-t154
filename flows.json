@@ -1,13 +1,5 @@
 [
     {
-        "id": "e396f300dc9d3cad",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "591e1866063ff770",
         "type": "tab",
         "label": "Dashboard: Obtencion de Datos V5",

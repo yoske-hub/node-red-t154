@@ -886,8 +886,10 @@
         "name": "Group 1",
         "tab": "32d4fdfbc0397edc",
         "order": 1,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "cf93e210eee30876",
@@ -907,8 +909,10 @@
         "name": "Group 2",
         "tab": "32d4fdfbc0397edc",
         "order": 2,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "bd441de931f6b39c",
@@ -916,8 +920,10 @@
         "name": "Group 3",
         "tab": "32d4fdfbc0397edc",
         "order": 3,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "f6aa5f2a1bf8ec9b",
@@ -925,8 +931,10 @@
         "name": "Group 4",
         "tab": "32d4fdfbc0397edc",
         "order": 4,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "79ec84f63110184e",
@@ -934,8 +942,10 @@
         "name": "Group 5",
         "tab": "32d4fdfbc0397edc",
         "order": 5,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "09194c32d1e11434",
@@ -943,8 +953,10 @@
         "name": "Group 6",
         "tab": "32d4fdfbc0397edc",
         "order": 6,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "91e7548ad30abe36",
@@ -952,8 +964,10 @@
         "name": "Group 7",
         "tab": "32d4fdfbc0397edc",
         "order": 7,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "ba5a82e601c4b90b",
@@ -961,8 +975,10 @@
         "name": "Group 8",
         "tab": "32d4fdfbc0397edc",
         "order": 8,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "b1a9d5581bab8f9f",
@@ -970,8 +986,10 @@
         "name": "Group 9",
         "tab": "32d4fdfbc0397edc",
         "order": 9,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "d8fe9f58920bee31",
@@ -979,8 +997,10 @@
         "name": "Group 10",
         "tab": "32d4fdfbc0397edc",
         "order": 10,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "b1665eb1fe4f6a0c",
@@ -988,8 +1008,10 @@
         "name": "Group 11",
         "tab": "32d4fdfbc0397edc",
         "order": 11,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "d4f49d32f3edf26e",
@@ -997,8 +1019,10 @@
         "name": "Group 12",
         "tab": "32d4fdfbc0397edc",
         "order": 12,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "26fd381c70913cd2",
@@ -1006,8 +1030,10 @@
         "name": "Group 13",
         "tab": "32d4fdfbc0397edc",
         "order": 13,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "3b749fce3194dbed",
@@ -1015,8 +1041,10 @@
         "name": "Group 14",
         "tab": "32d4fdfbc0397edc",
         "order": 14,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "915c4eaccf2a7fe8",
@@ -1024,8 +1052,10 @@
         "name": "Group 15",
         "tab": "32d4fdfbc0397edc",
         "order": 15,
-        "disp": true,
-        "width": 6
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "6ab60e39df9124a8",

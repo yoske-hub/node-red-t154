@@ -795,21 +795,12 @@
         "id": "0df4552f9d69039d",
         "type": "ui_group",
         "name": "DEFAULT",
-        "tab": "f3a8a67ff0904e39",
+        "tab": "",
         "order": 1,
         "disp": false,
         "width": "44",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "f3a8a67ff0904e39",
-        "type": "ui_tab",
-        "name": "HOME",
-        "icon": "dashboard",
-        "order": 4,
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "32d4fdfbc0397edc",
@@ -1056,6 +1047,15 @@
         "order": 8,
         "width": 1,
         "height": 1
+    },
+    {
+        "id": "fdb28016b20d0da3",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
     },
     {
         "id": "6ab60e39df9124a8",

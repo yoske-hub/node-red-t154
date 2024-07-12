@@ -3011,7 +3011,7 @@
         "name": "Dashboard app",
         "verbose": 0,
         "x": 1160,
-        "y": 100,
+        "y": 120,
         "wires": [
             [],
             []

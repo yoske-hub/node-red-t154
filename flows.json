@@ -1,0 +1,4669 @@
+[
+    {
+        "id": "591e1866063ff770",
+        "type": "tab",
+        "label": "Dashboard: Obtencion de Datos V5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e04d72fe31884dda",
+        "type": "tab",
+        "label": "Dashboard: 2nd view",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c7af699a810ac2fd",
+        "type": "tab",
+        "label": "RESUMEN",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cc475104f9cb9ac0",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "name": "LECTURA CON ALMACENAMIENTO EN DB",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d284bbdc889387b3",
+            "b9f039d9459feff5",
+            "be567fe2199e5722",
+            "6d698281225695da",
+            "59a82c929d3af6cd",
+            "ca12457d2d9c213f",
+            "f92f167ec8e203a8",
+            "87a72e38301405c3",
+            "e4b73e555dcd2fbc",
+            "52da3d2ab60674d5",
+            "9c267d8f909f4d12",
+            "6db16af1b13c5e87",
+            "a20022d344f32b66",
+            "ba823df2604b90c9",
+            "0933bc28819df424",
+            "d21dec6b62294a72",
+            "ee3fad87450e0685"
+        ],
+        "x": 14,
+        "y": 199,
+        "w": 1372,
+        "h": 282
+    },
+    {
+        "id": "cdadd16b2b631ffb",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "name": "LECTURA SIN ALMACENAMIENTO EN DB",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b88678fa687c4dad",
+            "bd2c4cb32cd31725",
+            "3b15cf3138aecaae",
+            "b0bcb1b807a2bcf3",
+            "8cd16c256e694517",
+            "7b3d70c3e62c83e7",
+            "429c225680d99ff8",
+            "864264b1720a6017",
+            "9a480bf6ed20c7d0",
+            "2a87c0d54694419d",
+            "d13a12256bc6126e",
+            "9b10343cb18279ff",
+            "15be1d6e36b12ed0"
+        ],
+        "x": 14,
+        "y": 519,
+        "w": 1372,
+        "h": 262
+    },
+    {
+        "id": "d0e0e9a8e837daa5",
+        "type": "group",
+        "z": "e04d72fe31884dda",
+        "name": "Config. Valor CT",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a83fcc627b946588",
+            "637daa2e5a188f6e"
+        ],
+        "x": 34,
+        "y": 279,
+        "w": 212,
+        "h": 122
+    },
+    {
+        "id": "6c29ae26a2167993",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "name": "Datos de Dashboard",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6ab60e39df9124a8",
+            "e7cdb1867518c819",
+            "6aea90de44dc8ae8",
+            "f7c0acbf90db1e51",
+            "3b9c5e1a6347a59f",
+            "43b368310f493b1b",
+            "3201fe194d243734",
+            "291ec9c008d55b82",
+            "6ecdeb1e305094c8",
+            "ab30fac5b78343b7",
+            "8d9ebb9879d8d295",
+            "7f9309cae77242a6",
+            "593d91ab3f1fe848",
+            "f40e4cefdfbc6969",
+            "c3dffafc4e45c233",
+            "6a5760860cc83823",
+            "4cc42c9786826cba",
+            "b3ac6c2198b871a5",
+            "040c876f5ebe1114",
+            "2fe77ba4b593ab55",
+            "1457475efe3bfbf6",
+            "a53939d8d5b84336",
+            "e9e11a8ee798a7a7",
+            "2b6f8187775d709c",
+            "4e305de2038b252c",
+            "56101fcfdb73c1fb",
+            "ee332216cef55396",
+            "8c49e02c7fba92bc",
+            "ec4eea4d7f9f6321",
+            "ce16cd8a13993535"
+        ],
+        "x": 14,
+        "y": 816.5,
+        "w": 872,
+        "h": 924.5
+    },
+    {
+        "id": "5f75df427ead0c38",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "name": "Chart de Dashboard",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2210abbe1027993a",
+            "2c609feb07f16c94",
+            "905d564c21e48ff3",
+            "5ecf79e675f75af9",
+            "77c9d0256a474214",
+            "9f2287d26721d5f7",
+            "b31798962f09d2d9",
+            "e91cd2776326d02a",
+            "1c61e5d94aecf1f5",
+            "e984abb7fbf3506f",
+            "2b20ce8276a2d9d9",
+            "104105b86eb15c29",
+            "dbc4d41dc462d5d5",
+            "010656e0b1208ff6"
+        ],
+        "x": 14,
+        "y": 1819,
+        "w": 1372,
+        "h": 462
+    },
+    {
+        "id": "8c49e02c7fba92bc",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "VARIABLES DE FLUJO",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d78ba95e8c60c6ef",
+            "b0a9759300dd6003"
+        ],
+        "x": 54,
+        "y": 1039,
+        "w": 212,
+        "h": 142
+    },
+    {
+        "id": "08e35faba256dbab",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "72ccb0b601e641cb",
+        "type": "ui_tab",
+        "name": "Monitor de temperatura 2",
+        "icon": "mi-monitor",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2b570706870b675e",
+        "type": "ui_group",
+        "name": "Grupo 1",
+        "tab": "72ccb0b601e641cb",
+        "order": 1,
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d48119735c989c85",
+        "type": "MySQLdatabase",
+        "name": "dbyoske",
+        "host": "localhost",
+        "port": "3306",
+        "db": "dbyoske",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "c0328d4edf5e2ba2",
+        "type": "ui_group",
+        "name": "Grupo 2",
+        "tab": "72ccb0b601e641cb",
+        "order": 2,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27728839ccdec9b8",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "746c9ff3a0553310",
+        "type": "MySQLdatabase",
+        "name": "dbTrafosCT",
+        "host": "localhost",
+        "port": "3306",
+        "db": "dbTrafosCT",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "6d1bd9e8b3d2a1f3",
+        "type": "ui_tab",
+        "name": "2nd View",
+        "icon": "mi-crop_din",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d73bdda69bcbe689",
+        "type": "ui_group",
+        "name": "Canal 1",
+        "tab": "6d1bd9e8b3d2a1f3",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c36d56ee3cd35227",
+        "type": "ui_group",
+        "name": "Canal 2",
+        "tab": "6d1bd9e8b3d2a1f3",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4d5a602c073f4c44",
+        "type": "ui_group",
+        "name": "Canal 3",
+        "tab": "6d1bd9e8b3d2a1f3",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c10b118336757907",
+        "type": "ui_group",
+        "name": "Titulo",
+        "tab": "6d1bd9e8b3d2a1f3",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "32d4fdfbc0397edc",
+        "type": "ui_tab",
+        "name": "RESUMEN",
+        "icon": "mi-view_compact",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "34df9b256d31d87a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "32d4fdfbc0397edc",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cf93e210eee30876",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "vwi1xw07kckfv2zsuq3vl7b4kdy6eitx2oj4yjwyygn4lzzdlj951d7oqao17d21",
+        "server": "nodered03.remote-red.com",
+        "region": "us"
+    },
+    {
+        "id": "aaf61c8b121f9302",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "32d4fdfbc0397edc",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bd441de931f6b39c",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "32d4fdfbc0397edc",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f6aa5f2a1bf8ec9b",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "32d4fdfbc0397edc",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "79ec84f63110184e",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "32d4fdfbc0397edc",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "09194c32d1e11434",
+        "type": "ui_group",
+        "name": "Group 6",
+        "tab": "32d4fdfbc0397edc",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "91e7548ad30abe36",
+        "type": "ui_group",
+        "name": "Group 7",
+        "tab": "32d4fdfbc0397edc",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba5a82e601c4b90b",
+        "type": "ui_group",
+        "name": "Group 8",
+        "tab": "32d4fdfbc0397edc",
+        "order": 8,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b1a9d5581bab8f9f",
+        "type": "ui_group",
+        "name": "Group 9",
+        "tab": "32d4fdfbc0397edc",
+        "order": 9,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8fe9f58920bee31",
+        "type": "ui_group",
+        "name": "Group 10",
+        "tab": "32d4fdfbc0397edc",
+        "order": 10,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b1665eb1fe4f6a0c",
+        "type": "ui_group",
+        "name": "Group 11",
+        "tab": "32d4fdfbc0397edc",
+        "order": 11,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d4f49d32f3edf26e",
+        "type": "ui_group",
+        "name": "Group 12",
+        "tab": "32d4fdfbc0397edc",
+        "order": 12,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26fd381c70913cd2",
+        "type": "ui_group",
+        "name": "Group 13",
+        "tab": "32d4fdfbc0397edc",
+        "order": 13,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b749fce3194dbed",
+        "type": "ui_group",
+        "name": "Group 14",
+        "tab": "32d4fdfbc0397edc",
+        "order": 14,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "915c4eaccf2a7fe8",
+        "type": "ui_group",
+        "name": "Group 15",
+        "tab": "32d4fdfbc0397edc",
+        "order": 15,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ab60e39df9124a8",
+        "type": "ui_media",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "c10b118336757907",
+        "name": "programando gif",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "gif",
+        "file": "giphy.gif",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 120,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2210abbe1027993a",
+        "type": "mqtt out",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 990,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "d284bbdc889387b3",
+        "type": "exec",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "command": "/home/yoskerasp/Desktop/ProjectCode/CodeFinal/lectura_t154_complete_v5",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Lectura T154 v5.3",
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "be567fe2199e5722"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d3e2684082398ce5",
+        "type": "inject",
+        "z": "591e1866063ff770",
+        "name": "Ejecucion periódica",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/1 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 420,
+        "y": 100,
+        "wires": [
+            [
+                "5bc495189df3a2df"
+            ]
+        ]
+    },
+    {
+        "id": "e7cdb1867518c819",
+        "type": "ui_text",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "2b570706870b675e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Fecha y hora",
+        "label": "Fecha y hora:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "6aea90de44dc8ae8",
+        "type": "ui_text",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "c0328d4edf5e2ba2",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Lecturas actualizadas cada minuto",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 180,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b88678fa687c4dad",
+        "type": "exec",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "command": "/home/yoskerasp/Desktop/ProjectCode/CodeFinal/lectura_t154_complete_v5",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Lectura T154 v5.3",
+        "x": 470,
+        "y": 680,
+        "wires": [
+            [
+                "bd2c4cb32cd31725"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bd2c4cb32cd31725",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "Clasificacion de datos",
+        "func": "/* Funcion de lectura erronea */\nfunction lectura_erronea(linea_error) {\n    var mensaje = linea_error[0].split(/\\t/);\n    msg.topic = \"ERROR\";\n    msg.payload = mensaje;\n}\n\n/* Funcion de lectura exitosa */\nfunction lectura_exitosa(linea_lectura) {\n    var datos_temp = [\n        linea_lectura[0].split(/\\t/),\n        linea_lectura[1].split(/\\t/),\n        linea_lectura[2].split(/\\t/)\n    ];\n    /* Selecionar y ordenar data */\n    for (let index = 0; index < 3; index++) {\n        switch (parseInt(datos_temp[index][1])) {\n            case 1:\n                data_c1 = datos_temp[index];\n                break;\n            case 2:\n                data_c2 = datos_temp[index];\n                break;\n            case 3:\n                data_c3 = datos_temp[index];\n                break;\n            default:          \n                //data_c4 = datos_temp[index];      \n                break;\n        }        \n    }\n    msg.topic = \"OK\";\n    msg.payload = [data_c1 , data_c2 , data_c3];\n}\n\n/* Procedimiento */\nvar texto = msg.payload;\nvar lineas = texto.split(/\\n/);\nvar data_c1 = [];\nvar data_c2 = [];\nvar data_c3 = [];\n\n/* Capturar la hora de finalización */\nvar finishTime = new Date();\nvar date_time = finishTime.toLocaleString();    // Formatear la hora de finalización como una cadena legible\n\ndate_time = date_time.split(/, /);              // Invertir formato\ndate_time = date_time[1] + \" ----------- \" + date_time[0];\nmsg.datetime = date_time;\n\nif(lineas.length > 3){\n    lectura_exitosa(lineas);    /* Devuelve a topic \"OK\" y payload 3x11*/\n}else{\n    lectura_erronea(lineas);    /* Devuelve a topic \"ERROR\" y payload 1x11*/\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 680,
+        "wires": [
+            [
+                "b0bcb1b807a2bcf3"
+            ]
+        ]
+    },
+    {
+        "id": "3b15cf3138aecaae",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "ERROR topics function",
+        "func": "/*  Entrada de datos   */\n/*  \"CT\"\t\\t\tError: Fuera de Modo SCAN\t\\t\tModo actual: \"xx\" \\t\\t\\t\\t\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"    \n    ó\n    \"CT\"\t\\t\tError: Tiempo máximo de ejecución de \"xx\"s excedido.\t\\t\tTiempo transcurrido: \"xx\" \\t\\t\\t\\t\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n*/\n\nvar data = msg.payload;\n\n// Formato de datos del programa. Los elementos comentados, no son necesarios mostrar\nconst topics = [\n    /*\"CT\",\"Canal\",*/ \"Temp\", \"Trip\", \"Alarm\", \"Fan\", \"Fault\"//, \"Hora\", \"Fecha\"//, \"ErroresDeTiempo\", \"DesfasesDeLectura\"\n];\n\n/* Funcion para saber si es numero. Util para no transformar mensajes o fechas */\nfunction isNumber(element) {\n    const patron = /^\\d+$/;    // patron a seguir ^:inicia con lo siguiente , $:continuo\n    if (patron.test(element)) {\n        return parseInt(element);\n    } else {\n        return element;\n    }\n}\n\n// topicos para error\n// topicos para canal 1\nlet lvl_topics_1 = topics.flatMap(function(element) {\n    return { topic: `CT${data[0]}/Canal1/${element}`, payload: \"NULL\" };\n});\n\n// topicos para canal 2\nlet lvl_topics_2 = topics.flatMap(function (element) {\n    return { topic: `CT${data[0]}/Canal2/${element}`, payload: \"NULL\" };\n});\n\n// topicos para canal 3\nlet lvl_topics_3 = topics.flatMap(function (element) {\n    return { topic: `CT${data[0]}/Canal3/${element}`, payload: \"NULL\" };\n});\n\n// topicos Tiempo de obtencion de datos\nlet datetime = { topic: `CT${data[0]}/DateTime`, payload: msg.datetime };\n\n// topicos Tiempo de obtencion de datos\nlet mensaje = { topic: `CT${data[0]}/Mensaje1`, payload: `${data[1]}\\n${data[2]}` };\n\n\n// mensajes concatenados\nmsg = lvl_topics_1.concat(lvl_topics_2, lvl_topics_3, datetime, mensaje);\n\nreturn [msg];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 740,
+        "wires": [
+            [
+                "7b3d70c3e62c83e7"
+            ]
+        ]
+    },
+    {
+        "id": "b0bcb1b807a2bcf3",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ERROR",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 740,
+        "wires": [
+            [
+                "15be1d6e36b12ed0"
+            ],
+            [
+                "3b15cf3138aecaae"
+            ]
+        ]
+    },
+    {
+        "id": "8cd16c256e694517",
+        "type": "mqtt out",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 1310,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7b3d70c3e62c83e7",
+        "type": "mqtt out",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 1310,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "b9f039d9459feff5",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "insertar data OK",
+        "func": "/*  Entrada de datos   */\n/*\n(1)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(2)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(3)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n*/\n\nvar data = msg.payload;\n\nvar canal1 = data[0];\nvar canal2 = data[1];\nvar canal3 = data[2];\n\nmsg.topic = `INSERT INTO Datos_CT${canal1[0]} (Canal, Temperatura, Trip, Alarm, Fan, Fault, Mensaje) VALUES \n            (${canal1[1]}, ${canal1[2]}, ${canal1[3]}, ${canal1[4]}, ${canal1[5]}, ${canal1[6]}, 'OK'),\n            (${canal2[1]}, ${canal2[2]}, ${canal2[3]}, ${canal2[4]}, ${canal2[5]}, ${canal2[6]}, 'OK'),\n            (${canal3[1]}, ${canal3[2]}, ${canal3[3]}, ${canal3[4]}, ${canal3[5]}, ${canal3[6]}, 'OK')`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 340,
+        "wires": [
+            [
+                "87a72e38301405c3"
+            ]
+        ]
+    },
+    {
+        "id": "be567fe2199e5722",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "Clasificacion de datos",
+        "func": "/* Funcion de lectura erronea */\nfunction lectura_erronea(linea_error) {\n    var mensaje = linea_error[0].split(/\\t/);\n    msg.topic = \"ERROR\";\n    msg.payload = mensaje;\n}\n\n/* Funcion de lectura exitosa */\nfunction lectura_exitosa(linea_lectura) {\n    var datos_temp = [\n        linea_lectura[0].split(/\\t/),\n        linea_lectura[1].split(/\\t/),\n        linea_lectura[2].split(/\\t/)\n    ];\n    /* Selecionar y ordenar data */\n    for (let index = 0; index < 3; index++) {\n        switch (parseInt(datos_temp[index][1])) {\n            case 1:\n                data_c1 = datos_temp[index];\n                break;\n            case 2:\n                data_c2 = datos_temp[index];\n                break;\n            case 3:\n                data_c3 = datos_temp[index];\n                break;\n            default:          \n                //data_c4 = datos_temp[index];      \n                break;\n        }        \n    }\n    msg.topic = \"OK\";\n    msg.payload = [data_c1 , data_c2 , data_c3];\n}\n\n/* Procedimiento */\nvar texto = msg.payload;\nvar lineas = texto.split(/\\n/);\nvar data_c1 = [];\nvar data_c2 = [];\nvar data_c3 = [];\n\n/* Capturar la hora de finalización */\nvar finishTime = new Date();\nvar date_time = finishTime.toLocaleString();    // Formatear la hora de finalización como una cadena legible\n\ndate_time = date_time.split(/, /);              // Invertir formato\ndate_time = date_time[1] + \" ----------- \" + date_time[0];\nmsg.datetime = date_time;\n\nif(lineas.length > 3){\n    lectura_exitosa(lineas);    /* Devuelve a topic \"OK\" y payload 3x11*/\n}else{\n    lectura_erronea(lineas);    /* Devuelve a topic \"ERROR\" y payload 1x11*/\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "59a82c929d3af6cd"
+            ]
+        ]
+    },
+    {
+        "id": "6d698281225695da",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "ERROR topics function",
+        "func": "/*  Entrada de datos   */\n/*  \"CT\"\t\\t\tError: Fuera de Modo SCAN\t\\t\tModo actual: \"xx\" \\t\\t\\t\\t\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"    \n    ó\n    \"CT\"\t\\t\tError: Tiempo máximo de ejecución de \"xx\"s excedido.\t\\t\tTiempo transcurrido: \"xx\" \\t\\t\\t\\t\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n*/\n\n\n\nvar data = msg.payload;\n\n// Formato de datos del programa. Los elementos comentados, no son necesarios mostrar\nconst topics = [\n    /*\"CT\",\"Canal\",*/ \"Temp\", \"Trip\", \"Alarm\", \"Fan\", \"Fault\"//, \"Hora\", \"Fecha\"//, \"ErroresDeTiempo\", \"DesfasesDeLectura\"\n];\n\n/* Funcion para saber si es numero. Util para no transformar mensajes o fechas */\nfunction isNumber(element) {\n    const patron = /^\\d+$/;    // patron a seguir ^:inicia con lo siguiente , $:continuo\n    if (patron.test(element)) {\n        return parseInt(element);\n    } else {\n        return element;\n    }\n}\n\n// topicos de canal 1\nlet lvl_topics_1 = topics.flatMap(function(element) {\n    return { topic: `CT${data[0]}/Canal1/${element}`, payload: \"NULL\" };\n});\n\n// topicos de canal 2\nlet lvl_topics_2 = topics.flatMap(function (element) {\n    return { topic: `CT${data[0]}/Canal2/${element}`, payload: \"NULL\" };\n});\n\n// topicos de canal 3\nlet lvl_topics_3 = topics.flatMap(function (element) {\n    return { topic: `CT${data[0]}/Canal3/${element}`, payload: \"NULL\" };\n});\n\n// topicos de fecha y hora\nlet datetime = { topic: `CT${data[0]}/DateTime`, payload: msg.datetime };\n\n// topicos de mensajes\nlet mensaje = { topic: `CT${data[0]}/Mensaje1`, payload: `${data[1]}\\n${data[2]}` };\n\n// topicos concatenados\nmsg = lvl_topics_1.concat(lvl_topics_2, lvl_topics_3, datetime, mensaje);\n\nreturn [msg];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 400,
+        "wires": [
+            [
+                "9c267d8f909f4d12"
+            ]
+        ]
+    },
+    {
+        "id": "59a82c929d3af6cd",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ERROR",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 440,
+        "wires": [
+            [
+                "ca12457d2d9c213f",
+                "b9f039d9459feff5"
+            ],
+            [
+                "6d698281225695da",
+                "f92f167ec8e203a8"
+            ]
+        ]
+    },
+    {
+        "id": "ca12457d2d9c213f",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "OK topics function",
+        "func": "/*  Entrada de datos   */\n/*\n(1)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(2)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(3)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(4)*linea en blanco*\n*/\n\nvar data = msg.payload;\n\n/* Funcion para saber si es numero. Util para no transformar mensajes o fechas */\nfunction isNumber(element) {\n    const patron = /^\\d+$/;    // patron a seguir ^:inicia con lo siguiente , $:continuo\n    if (patron.test(element)){\n        return parseInt(element);\n    }else{\n        return element;\n    }\n}\n\n// Formato de datos del programa. Los elementos comentados, no son necesarios operar\nconst topics = [\n    /*\"CT\",\"Canal\",*/ \"Temp\", \"Trip\", \"Alarm\", \"Fan\", \"Fault\"//, \"Hora\", \"Fecha\"//, \"ErroresDeTiempo\", \"DesfasesDeLectura\"\n];\n\n// topicos de canal 1\nlet lvl_topics_1 = topics.flatMap(function(element, index) {\n    return { topic: `CT${data[0][0]}/Canal1/${element}`, payload:  isNumber(data[0][index + 2])};\n});\n\n// topicos de canal 2\nlet lvl_topics_2 = topics.flatMap(function (element, index) {\n    return { topic: `CT${data[1][0]}/Canal2/${element}`, payload: isNumber(data[1][index + 2]) };\n});\n\n// topicos de canal 3\nlet lvl_topics_3 = topics.flatMap(function (element, index) {\n    return { topic: `CT${data[2][0]}/Canal3/${element}`, payload: isNumber(data[2][index + 2]) };\n});\n\n// topicos de fecha y hora\nlet datetime = { topic: `CT${data[2][0]}/DateTime`, payload: msg.datetime };\n\n// topicos de mensajes\nlet mensaje = { topic: `CT${data[0]}/Mensaje1`, payload: `Lectura\\nExitosa` };\n\n// mensajes concatenados\nmsg = lvl_topics_1.concat(lvl_topics_2, lvl_topics_3, datetime, mensaje);\n\nreturn [msg];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 300,
+        "wires": [
+            [
+                "52da3d2ab60674d5"
+            ]
+        ]
+    },
+    {
+        "id": "f92f167ec8e203a8",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "insertar data ERROR",
+        "func": "/*  Entrada de datos   */\n/*  \"CT\"\t\\t\tError: Fuera de Modo SCAN\t\\t\tModo actual: \"xx\" \\t\\t\\t\\t\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"    \n    ó\n    \"CT\"\t\\t\tError: Tiempo máximo de ejecución de \"xx\"s excedido.\t\\t\tTiempo transcurrido: \"xx\" \\t\\t\\t\\t\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"*/\n\n\nvar canal_error = msg.payload;\n\nmsg.topic = `INSERT INTO Datos_CT${canal_error[0]} (Canal, Temperatura, Trip, Alarm, Fan, Fault, Mensaje) VALUES \n            (1, NULL, NULL, NULL, NULL, NULL, '${canal_error[1]} ${canal_error[2]}'),\n            (2, NULL, NULL, NULL, NULL, NULL, '${canal_error[1]} ${canal_error[2]}'),\n            (3, NULL, NULL, NULL, NULL, NULL, '${canal_error[1]} ${canal_error[2]}')`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 440,
+        "wires": [
+            [
+                "e4b73e555dcd2fbc"
+            ]
+        ]
+    },
+    {
+        "id": "87a72e38301405c3",
+        "type": "mysql",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 1190,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4b73e555dcd2fbc",
+        "type": "mysql",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 1190,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52da3d2ab60674d5",
+        "type": "mqtt out",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 1310,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9c267d8f909f4d12",
+        "type": "mqtt out",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 1310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6db16af1b13c5e87",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "Mostrar y almacenar datos",
+        "info": "Dependiendo si la salida del programa es\nde lectura o de error, se elegira los\ndatos a manipular.",
+        "x": 1050,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a20022d344f32b66",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "Ejecutar programa",
+        "info": "Este programa y su direccion tienen que\nestar almacenados para poder ser \nejecutados correctamente con los permisos\ncorrespondiente.",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ba823df2604b90c9",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "Ordenamiento",
+        "info": "Sesga la salida obtenida para ser \ncorrectamente manipulado",
+        "x": 710,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2c609feb07f16c94",
+        "type": "ui_chart",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Gráfico multi-entrada",
+        "group": "c0328d4edf5e2ba2",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "label": "Histórico de Temperatura",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "10",
+        "ymax": "30",
+        "removeOlder": "10",
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1260,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "905d564c21e48ff3",
+        "type": "ui_button",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "",
+        "group": "c0328d4edf5e2ba2",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "LIMPIAR GRÁFICO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "delete_sweep",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 940,
+        "y": 2240,
+        "wires": [
+            [
+                "2c609feb07f16c94"
+            ]
+        ]
+    },
+    {
+        "id": "5ecf79e675f75af9",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "DB a chart",
+        "func": "/*\nid\t\nCanal\t\nTemperatura\t\nTrip\t\nAlarm\t\nFan\t\nFault\t\nMensaje\t\nDateTime\n*/\n\nvar datos = msg.payload;\nvar id = datos.length; \n// las filas se dividen en 3 grupos, canal(1,2,3) + fecha que es la misma de cada canal\nvar temp1 = new Array(id/3);\nvar temp2 = new Array(id/3);\nvar temp3 = new Array(id/3);\nvar datetime = new Array(id/3);\n\n// Contadores para cada canal\nlet count_1 = 0;\nlet count_2 = 0;\nlet count_3 = 0;\nlet count_time = 0;\n\nfor (let i = 0; i < id;i++) {\n    switch ( parseInt(datos[id-i-1].Canal) ) {\n        case 1:\n            temp1[count_1] = datos[id-i-1].Temperatura;\n            datetime[count_time]  = datos[id-i-1].DateTime;\n            count_1++;\n            count_time++;\n            break;\n        case 2:\n            temp2[count_2] = datos[id-i-1].Temperatura;\n            count_2++;\n            break;\n        case 3:\n            temp3[count_3] = datos[id-i-1].Temperatura;\n            count_3++;\n            break;\n        default:            \n    }\n}\n\nvar series = [\n     {  \"series\":[\"Canal 1\",\"Canal 2\",\"Canal 3\"],\n        \"data\":[\n            temp1.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp2.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp3.map((value, index) => ({ \"x\": datetime[index], \"y\": value }))\n            ],\n        \"labels\":[\"\"]\n    }\n];\n\nmsg.payload = series;\n\n//delete msg.topic; // Eliminar la propiedad 'topic' del mensaje\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 2180,
+        "wires": [
+            [
+                "2c609feb07f16c94"
+            ]
+        ]
+    },
+    {
+        "id": "77c9d0256a474214",
+        "type": "ui_button",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Boton_leer",
+        "group": "2b570706870b675e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Obtener lecturas recientes",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "show_chart",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 2180,
+        "wires": [
+            [
+                "9f2287d26721d5f7"
+            ]
+        ]
+    },
+    {
+        "id": "9f2287d26721d5f7",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Peticion de datos CT1",
+        "func": "\nvar numero = msg.topic;\nnumero = parseInt(numero) * 3;\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + numero.toString();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n var msg ={};\n msg.topic=0;\n msg.payload =0;\n return msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 2180,
+        "wires": [
+            [
+                "e984abb7fbf3506f"
+            ]
+        ]
+    },
+    {
+        "id": "b31798962f09d2d9",
+        "type": "ui_text_input",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Obtener lecturas",
+        "label": "Cantidad de datos a leer:",
+        "tooltip": "Ingrese un valor entre 1 y {{msg.payload[0].data_max}}",
+        "group": "2b570706870b675e",
+        "order": 8,
+        "width": 9,
+        "height": 1,
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 510,
+        "y": 1920,
+        "wires": [
+            [
+                "77c9d0256a474214",
+                "e91cd2776326d02a"
+            ]
+        ]
+    },
+    {
+        "id": "e91cd2776326d02a",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Consulta id MAX CT1",
+        "func": "var numero = msg.topic;\nmsg.topic = `SELECT MAX(id)/3 AS data_max FROM Datos_CT${flow.get(\"ctx\")}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\nvar msg = {};\nmsg.topic = \"SELECT id FROM `datos_temp_test` ORDER BY `id` DESC LIMIT 1\";\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 1920,
+        "wires": [
+            [
+                "1c61e5d94aecf1f5"
+            ]
+        ]
+    },
+    {
+        "id": "1c61e5d94aecf1f5",
+        "type": "mysql",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 330,
+        "y": 1920,
+        "wires": [
+            [
+                "b31798962f09d2d9"
+            ]
+        ]
+    },
+    {
+        "id": "e984abb7fbf3506f",
+        "type": "mysql",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 790,
+        "y": 2180,
+        "wires": [
+            [
+                "5ecf79e675f75af9"
+            ]
+        ]
+    },
+    {
+        "id": "2b20ce8276a2d9d9",
+        "type": "mqtt in",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "",
+        "topic": "CT1/+/Temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 790,
+        "y": 2120,
+        "wires": [
+            [
+                "104105b86eb15c29"
+            ]
+        ]
+    },
+    {
+        "id": "104105b86eb15c29",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "mqqt a chart",
+        "func": "// Usando expresiones regulares para manejar cualquier prefijo antes de CanalX/Temp\n\nvar patron1 = `^.+/Canal1/Temp$`;\nvar patron2 = `^.+/Canal2/Temp$`;\nvar patron3 = `^.+/Canal3/Temp$`;\nvar regex = [new RegExp(patron1), new RegExp(patron2), new RegExp(patron3)];\n\nif (regex[0].test(msg.topic)) {\n    msg.topic = 'Canal 1';\n} else if (regex[1].test(msg.topic)) {\n    msg.topic = 'Canal 2';\n} else if (regex[2].test(msg.topic)) {\n    msg.topic = 'Canal 3';\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 2120,
+        "wires": [
+            [
+                "2c609feb07f16c94"
+            ]
+        ]
+    },
+    {
+        "id": "dbc4d41dc462d5d5",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Maximo valor de datos",
+        "info": "Muestra a modo de tooltip en la entrada\nde texto la cantidad maxima de datos\nalmacenado",
+        "x": 220,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "010656e0b1208ff6",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "5f75df427ead0c38",
+        "name": "Escritura del grafico chart",
+        "info": "* Acumula datos del programa ejexutado\n* Registra datos obtenidos en consulta SQL\n* LIMPIA EL GRAFICO",
+        "x": 610,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "429c225680d99ff8",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "Ordenamiento",
+        "info": "",
+        "x": 830,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f7c0acbf90db1e51",
+        "type": "ui_media",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "2b570706870b675e",
+        "name": "",
+        "width": 9,
+        "height": 9,
+        "order": 1,
+        "category": "imagen",
+        "file": "WhatsApp Image 2024-07-10 at 20.32.07.jpeg",
+        "layout": "center",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 90,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7b12563e5c163d7",
+        "type": "mqtt out",
+        "z": "591e1866063ff770",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 930,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0933bc28819df424",
+        "type": "mqtt in",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "",
+        "topic": "Ejecutar/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "d21dec6b62294a72"
+            ]
+        ]
+    },
+    {
+        "id": "1a8d75c6dd88f794",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "name": "FUNCION PERIODICA DE EJECUCIÓN A TRAVES DE MOSQUITTO (BROKER)",
+        "info": "",
+        "x": 660,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d78ba95e8c60c6ef",
+        "type": "mqtt in",
+        "z": "591e1866063ff770",
+        "g": "8c49e02c7fba92bc",
+        "name": "",
+        "topic": "CT1/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1140,
+        "wires": [
+            [
+                "3b9c5e1a6347a59f",
+                "ee332216cef55396",
+                "ec4eea4d7f9f6321"
+            ]
+        ]
+    },
+    {
+        "id": "3b9c5e1a6347a59f",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "+/Canalx/+",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/Canal1\\/.+$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/Canal2\\/.+$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/Canal3\\/.+$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 350,
+        "y": 1140,
+        "wires": [
+            [
+                "43b368310f493b1b"
+            ],
+            [
+                "6ecdeb1e305094c8"
+            ],
+            [
+                "ab30fac5b78343b7"
+            ]
+        ]
+    },
+    {
+        "id": "43b368310f493b1b",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "+/+/Datos1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+/.+/Temp$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+/.+/Trip$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+/.+/Alarm$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fan$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+/.+/Fault$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "3201fe194d243734",
+                "291ec9c008d55b82"
+            ],
+            [
+                "4e305de2038b252c"
+            ],
+            [
+                "e9e11a8ee798a7a7"
+            ],
+            [
+                "2b6f8187775d709c"
+            ],
+            [
+                "56101fcfdb73c1fb"
+            ]
+        ]
+    },
+    {
+        "id": "3201fe194d243734",
+        "type": "ui_gauge",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "CANAL 1",
+        "group": "c0328d4edf5e2ba2",
+        "order": 1,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "Canal 1 : Ventana",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "291ec9c008d55b82",
+        "type": "ui_text",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "2b570706870b675e",
+        "order": 4,
+        "width": 3,
+        "height": 2,
+        "name": "Lectura 1",
+        "label": "Canal 1:",
+        "format": "{{msg.payload}} °C",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 800,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6ecdeb1e305094c8",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "+/+/Datos2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Temp$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Trip$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Alarm$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fan$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fault$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 570,
+        "y": 1140,
+        "wires": [
+            [
+                "7f9309cae77242a6",
+                "8d9ebb9879d8d295"
+            ],
+            [
+                "4cc42c9786826cba"
+            ],
+            [
+                "c3dffafc4e45c233"
+            ],
+            [
+                "6a5760860cc83823"
+            ],
+            [
+                "b3ac6c2198b871a5"
+            ]
+        ]
+    },
+    {
+        "id": "ab30fac5b78343b7",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "+/+/Datos3",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Temp$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Trip$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Alarm$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fan$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fault$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 570,
+        "y": 1400,
+        "wires": [
+            [
+                "593d91ab3f1fe848",
+                "f40e4cefdfbc6969"
+            ],
+            [
+                "1457475efe3bfbf6"
+            ],
+            [
+                "040c876f5ebe1114"
+            ],
+            [
+                "2fe77ba4b593ab55"
+            ],
+            [
+                "a53939d8d5b84336"
+            ]
+        ]
+    },
+    {
+        "id": "8d9ebb9879d8d295",
+        "type": "ui_gauge",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "CANAL 2",
+        "group": "c0328d4edf5e2ba2",
+        "order": 3,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "Canal 2 : FuenteDC",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7f9309cae77242a6",
+        "type": "ui_text",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "2b570706870b675e",
+        "order": 5,
+        "width": 3,
+        "height": 2,
+        "name": "Lectura 2",
+        "label": "Canal 2:",
+        "format": "{{msg.payload}} °C",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 800,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "593d91ab3f1fe848",
+        "type": "ui_gauge",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "CANAL 3",
+        "group": "c0328d4edf5e2ba2",
+        "order": 5,
+        "width": 4,
+        "height": 4,
+        "gtype": "donut",
+        "title": "Canal 3 : Agua",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "f40e4cefdfbc6969",
+        "type": "ui_text",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "2b570706870b675e",
+        "order": 6,
+        "width": 3,
+        "height": 2,
+        "name": "Lectura 3",
+        "label": "Canal 3:",
+        "format": "{{msg.payload}} °C",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 800,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "c3dffafc4e45c233",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 8,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Alarm",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffa500",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Alarm 2",
+        "x": 800,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "6a5760860cc83823",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 11,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Fan",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffa500",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Fan 2",
+        "x": 790,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "4cc42c9786826cba",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 4,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Trip",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Trip 2",
+        "x": 790,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "b3ac6c2198b871a5",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 14,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Fault",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Fault 2",
+        "x": 790,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "040c876f5ebe1114",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 9,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Alarm",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffa500",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Alarm 3",
+        "x": 800,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "2fe77ba4b593ab55",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 12,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Fan",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffa500",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Fan 3",
+        "x": 790,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "1457475efe3bfbf6",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 6,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Trip",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Trip 3",
+        "x": 790,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "a53939d8d5b84336",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 15,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Fault",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Fault 3",
+        "x": 790,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "e9e11a8ee798a7a7",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 7,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Alarm",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffa500",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Alarm 1",
+        "x": 800,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "2b6f8187775d709c",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 10,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Fan",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffa500",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Fan 1",
+        "x": 790,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "4e305de2038b252c",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 2,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Trip",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Trip 1",
+        "x": 790,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "56101fcfdb73c1fb",
+        "type": "ui_led",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "order": 13,
+        "group": "c0328d4edf5e2ba2",
+        "width": 2,
+        "height": 1,
+        "label": "Fault",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "10",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "Fault 1",
+        "x": 790,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "ee332216cef55396",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "+/DateTime",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+/DateTime$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 1640,
+        "wires": [
+            [
+                "e7cdb1867518c819"
+            ]
+        ]
+    },
+    {
+        "id": "b0a9759300dd6003",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "8c49e02c7fba92bc",
+        "name": "CTx ACTUAL 1",
+        "func": "",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar ct_current = 1;\nflow.set(\"ctx\", ct_current);",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "864264b1720a6017",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "Ejecutar programa",
+        "info": "Este programa y su direccion tienen que\nestar almacenados para poder ser \nejecutados correctamente con los permisos\ncorrespondiente.",
+        "x": 470,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "9a480bf6ed20c7d0",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "Mostrar datos",
+        "info": "Dependiendo si la salida del programa es\nde lectura o de error, se elegira los\ndatos a manipular.",
+        "x": 1170,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "2a87c0d54694419d",
+        "type": "ui_button",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "",
+        "group": "2b570706870b675e",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Actualizar lectura",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "",
+        "topicType": "str",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            [
+                "b88678fa687c4dad"
+            ]
+        ]
+    },
+    {
+        "id": "d13a12256bc6126e",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "Funcion manual ACTUALIZAR LECTURA sin almacenar",
+        "info": "",
+        "x": 660,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "d21dec6b62294a72",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "+/CTx",
+        "func": "var ctx = flow.get(\"ctx\");\nvar patron = `^.+/CT${ctx}$`;\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nif (regex.test(msg.topic)) {\n    return msg;\n}\nreturn null;  // No hace nada si no coincide\n\n// var eject = `Actualizar\\/CT${flow.get(\"ctx\")}`\n// if(msg.topic == eject){\n//     return msg;\n// }",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "d284bbdc889387b3"
+            ]
+        ]
+    },
+    {
+        "id": "ee3fad87450e0685",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "Seleccion CT",
+        "info": "Este nodo selecciona el CT alamcenado en\nla variable de flujo \"ctx\" que alamcena\nel ct actual",
+        "x": 270,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5bc495189df3a2df",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "name": "Ejecutar/CTx",
+        "func": "// numeros de CT's conectados\nvar ct_exist = [1];\n\n// bucle para mandar topicos de ejecucion\nlet ejec_topics = ct_exist.flatMap(function (element) {\n    return { topic: `Ejecutar/CT${element}`, payload: element };\n});\n\nmsg = ejec_topics;\n\nreturn [msg];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 100,
+        "wires": [
+            [
+                "f7b12563e5c163d7"
+            ]
+        ]
+    },
+    {
+        "id": "9b10343cb18279ff",
+        "type": "inject",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "Manual refresh",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 620,
+        "wires": [
+            [
+                "2a87c0d54694419d"
+            ]
+        ]
+    },
+    {
+        "id": "15be1d6e36b12ed0",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "cdadd16b2b631ffb",
+        "name": "OK topics function",
+        "func": "/*  Entrada de datos   */\n/*\n(1)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(2)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(3)\"CT\"\t\\t\t\"Canal\"\t\\t\t\"Temp\"\t\\t\t\"Trip\"\t\\t\t\"Alarm\"\t\\t\t\"Fan\"\t\\t\t\"Fault\"\t\\t\t\"Hora\"\t\\t\t\"Fecha\"\t\\t\t\"ErroresDeTiempo\"\t\\t\t\"DesfasesDeLectura\"\n(4)*linea en blanco*\n*/\n\nvar data = msg.payload;\n\n/* Funcion para saber si es numero. Util para no transformar mensajes o fechas */\nfunction isNumber(element) {\n    const patron = /^\\d+$/;    // patron a seguir ^:inicia con lo siguiente , $:continuo\n    if (patron.test(element)){\n        return parseInt(element);\n    }else{\n        return element;\n    }\n}\n\n// Formato de datos del programa. Los elementos comentados, no son necesarios operar\nconst topics = [\n    /*\"CT\",\"Canal\",*/ \"Temp\", \"Trip\", \"Alarm\", \"Fan\", \"Fault\"//, \"Hora\", \"Fecha\"//, \"ErroresDeTiempo\", \"DesfasesDeLectura\"\n];\n\n// topicos de canal 1\nlet lvl_topics_1 = topics.flatMap(function(element, index) {\n    return { topic: `CT${data[0][0]}/Canal1/${element}`, payload:  isNumber(data[0][index + 2])};\n});\n\n// topicos de canal 2\nlet lvl_topics_2 = topics.flatMap(function (element, index) {\n    return { topic: `CT${data[1][0]}/Canal2/${element}`, payload: isNumber(data[1][index + 2]) };\n});\n\n// topicos de canal 3\nlet lvl_topics_3 = topics.flatMap(function (element, index) {\n    return { topic: `CT${data[2][0]}/Canal3/${element}`, payload: isNumber(data[2][index + 2]) };\n});\n\n// topicos de fecha y hora\nlet datetime = { topic: `CT${data[2][0]}/DateTime`, payload: msg.datetime };\n\n// topicos de mensajes\nvar mensaje = { topic: `CT${data[0][0]}/Mensaje`, payload: `Lectura\\nExistosa`};\n\n// mensajes concatenados\nmsg = lvl_topics_1.concat(lvl_topics_2, lvl_topics_3, datetime, mensaje);\n\nreturn [msg];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 680,
+        "wires": [
+            [
+                "8cd16c256e694517"
+            ]
+        ]
+    },
+    {
+        "id": "ce16cd8a13993535",
+        "type": "ui_text",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "group": "2b570706870b675e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Mensaje 1",
+        "label": "<font face='arial black' size=4>{{msg.payload}}",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "ec4eea4d7f9f6321",
+        "type": "switch",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "+/Mensajes",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+/Mensaje$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 1700,
+        "wires": [
+            [
+                "ce16cd8a13993535"
+            ]
+        ]
+    },
+    {
+        "id": "381e76869b9723cb",
+        "type": "remote-access",
+        "z": "591e1866063ff770",
+        "confignode": "cf93e210eee30876",
+        "name": "Dashboard app",
+        "verbose": 0,
+        "x": 1160,
+        "y": 120,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bc36f83ea9e843b4",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "c10b118336757907",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Fecha y hora:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 780,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "56337f516775802c",
+        "type": "switch",
+        "z": "e04d72fe31884dda",
+        "name": "+/Canalx/+",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/Canal1\\/.+$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/Canal2\\/.+$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/Canal3\\/.+$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "9d075eb495228801"
+            ],
+            [
+                "4ada7ba13484655c"
+            ],
+            [
+                "3e96ce1a2be27355"
+            ]
+        ]
+    },
+    {
+        "id": "9d075eb495228801",
+        "type": "switch",
+        "z": "e04d72fe31884dda",
+        "name": "+/+/Datos1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Temp$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Trip$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Alarm$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fan$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fault$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "9cac91075ed031da"
+            ],
+            [
+                "9251ebc919ec6eea"
+            ],
+            [
+                "8457523c19b81d52"
+            ],
+            [
+                "a90bab06ebc85c55"
+            ],
+            [
+                "c4bf8a7cefb37abf"
+            ]
+        ]
+    },
+    {
+        "id": "9cac91075ed031da",
+        "type": "ui_gauge",
+        "z": "e04d72fe31884dda",
+        "name": "Temp 1",
+        "group": "d73bdda69bcbe689",
+        "order": 1,
+        "width": 8,
+        "height": 8,
+        "gtype": "donut",
+        "title": "Canal 1 : Ventana",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4ada7ba13484655c",
+        "type": "switch",
+        "z": "e04d72fe31884dda",
+        "name": "+/+/Datos2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Temp$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Trip$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Alarm$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fan$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fault$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "1a42e6f9d3e1f9a8"
+            ],
+            [
+                "09ca65dac16f6c99"
+            ],
+            [
+                "db447157bfd24bba"
+            ],
+            [
+                "710cafc1a94191de"
+            ],
+            [
+                "7c756722b6c1d565"
+            ]
+        ]
+    },
+    {
+        "id": "3e96ce1a2be27355",
+        "type": "switch",
+        "z": "e04d72fe31884dda",
+        "name": "+/+/Datos3",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Temp$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Trip$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Alarm$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fan$",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "^.+\\/.+\\/Fault$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 530,
+        "y": 620,
+        "wires": [
+            [
+                "c9df9401b22d47ac"
+            ],
+            [
+                "d92b9e06e579192c"
+            ],
+            [
+                "86bb524f0166bc10"
+            ],
+            [
+                "67f991ee72e30846"
+            ],
+            [
+                "4363e64b9f906217"
+            ]
+        ]
+    },
+    {
+        "id": "c9df9401b22d47ac",
+        "type": "ui_gauge",
+        "z": "e04d72fe31884dda",
+        "name": "Temp 3",
+        "group": "4d5a602c073f4c44",
+        "order": 1,
+        "width": 8,
+        "height": 8,
+        "gtype": "donut",
+        "title": "Canal 3 : Agua",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9251ebc919ec6eea",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"red\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 120,
+        "wires": [
+            [
+                "715e5930384866ab"
+            ]
+        ]
+    },
+    {
+        "id": "8457523c19b81d52",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"orange\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 160,
+        "wires": [
+            [
+                "fdd3291d81f1c508"
+            ]
+        ]
+    },
+    {
+        "id": "a90bab06ebc85c55",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "// msg.color = (msg.payload == 1)? \"orange\":\"gray\";\nmsg.color = (msg.payload == 1)? \"orange\":\"gray\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 200,
+        "wires": [
+            [
+                "18e46e37af03c042"
+            ]
+        ]
+    },
+    {
+        "id": "c4bf8a7cefb37abf",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"red\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "c1256729072cc6cb"
+            ]
+        ]
+    },
+    {
+        "id": "62e9b5c29fe7d1b6",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "4d5a602c073f4c44",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "name": "Trip 3",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"TRIP\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d92b9e06e579192c",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"red\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 640,
+        "wires": [
+            [
+                "62e9b5c29fe7d1b6"
+            ]
+        ]
+    },
+    {
+        "id": "b537ff26813c9a88",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "4d5a602c073f4c44",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "name": "Alarm 3",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"ALARM\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 920,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8674e6cb2aee08ca",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "4d5a602c073f4c44",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "name": "Fan 3",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"FAN\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "a1a2919b7af07673",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "4d5a602c073f4c44",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "name": "Fault 3",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"FAULT\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "86bb524f0166bc10",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"orange\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 680,
+        "wires": [
+            [
+                "b537ff26813c9a88"
+            ]
+        ]
+    },
+    {
+        "id": "67f991ee72e30846",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"orange\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "8674e6cb2aee08ca"
+            ]
+        ]
+    },
+    {
+        "id": "4363e64b9f906217",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"red\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 760,
+        "wires": [
+            [
+                "a1a2919b7af07673"
+            ]
+        ]
+    },
+    {
+        "id": "554a9fb54db8b691",
+        "type": "switch",
+        "z": "e04d72fe31884dda",
+        "name": "+/DateTime",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+\\/DateTime$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 860,
+        "wires": [
+            [
+                "bc36f83ea9e843b4"
+            ]
+        ]
+    },
+    {
+        "id": "a83fcc627b946588",
+        "type": "mqtt in",
+        "z": "e04d72fe31884dda",
+        "g": "d0e0e9a8e837daa5",
+        "name": "",
+        "topic": "CT1/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "56337f516775802c",
+                "554a9fb54db8b691",
+                "1f2e2777528f15f0"
+            ]
+        ]
+    },
+    {
+        "id": "637daa2e5a188f6e",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "g": "d0e0e9a8e837daa5",
+        "name": "CT ACTUAL 1",
+        "func": "",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar ct_current = 1;\nflow.set(\"ctx\", ct_current);",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8388691ed30284f",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "d": true,
+        "group": "4d5a602c073f4c44",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "espaciador 3",
+        "label": "",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "1",
+        "color": "#000000",
+        "x": 930,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3d36211dabe87665",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "d": true,
+        "group": "d73bdda69bcbe689",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "espaciador 1",
+        "label": "",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "1",
+        "color": "#000000",
+        "x": 930,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "715e5930384866ab",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "d73bdda69bcbe689",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "name": "Trip 1",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"TRIP\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fdd3291d81f1c508",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "d73bdda69bcbe689",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "name": "Alarm 1",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"ALARM\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 920,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "18e46e37af03c042",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "d73bdda69bcbe689",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "name": "Fan 1",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"FAN\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c1256729072cc6cb",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "d73bdda69bcbe689",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "name": "Fault 1",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"FAULT\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1a42e6f9d3e1f9a8",
+        "type": "ui_gauge",
+        "z": "e04d72fe31884dda",
+        "name": "Temp 2",
+        "group": "c36d56ee3cd35227",
+        "order": 1,
+        "width": 8,
+        "height": 8,
+        "gtype": "donut",
+        "title": "Canal 2 : FuenteDC",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f3b245dff126d865",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "d": true,
+        "group": "c36d56ee3cd35227",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "espaciador 2",
+        "label": "",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "1",
+        "color": "#000000",
+        "x": 930,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "09ca65dac16f6c99",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"red\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 380,
+        "wires": [
+            [
+                "776c5b373ca029cc"
+            ]
+        ]
+    },
+    {
+        "id": "db447157bfd24bba",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"orange\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 420,
+        "wires": [
+            [
+                "ed81eb52d618399a"
+            ]
+        ]
+    },
+    {
+        "id": "710cafc1a94191de",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "// msg.color = (msg.payload == 1)? \"orange\":\"gray\";\nmsg.color = (msg.payload == 1)? \"orange\":\"gray\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 460,
+        "wires": [
+            [
+                "db9492304454c34b"
+            ]
+        ]
+    },
+    {
+        "id": "7c756722b6c1d565",
+        "type": "function",
+        "z": "e04d72fe31884dda",
+        "name": "Color Set",
+        "func": "msg.color = (msg.payload == 1)? \"red\":\"gray\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 500,
+        "wires": [
+            [
+                "1d07bb0d38842385"
+            ]
+        ]
+    },
+    {
+        "id": "776c5b373ca029cc",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "c36d56ee3cd35227",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "name": "Trip 2",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"TRIP\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ed81eb52d618399a",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "c36d56ee3cd35227",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "name": "Alarm 2",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"ALARM\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 920,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "db9492304454c34b",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "c36d56ee3cd35227",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "name": "Fan 2",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"FAN\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1d07bb0d38842385",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "c36d56ee3cd35227",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "name": "Fault 2",
+        "label": "<font color={{msg.color}} size=7><i class=\"fa fa-square\">",
+        "format": "<font face='arial black' size=4>{{\"FAULT\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 910,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "745beead6560f6ac",
+        "type": "ui_text",
+        "z": "e04d72fe31884dda",
+        "group": "c10b118336757907",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Mensaje 1",
+        "label": "<font face='arial black' size=4>{{msg.payload}}",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "1f2e2777528f15f0",
+        "type": "switch",
+        "z": "e04d72fe31884dda",
+        "name": "+/Mensajes",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^.+/Mensaje$",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 920,
+        "wires": [
+            [
+                "745beead6560f6ac",
+                "3a6e4da6f8632b3d"
+            ]
+        ]
+    },
+    {
+        "id": "3a6e4da6f8632b3d",
+        "type": "debug",
+        "z": "e04d72fe31884dda",
+        "name": "debug 17",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "0a5ce4fbb57449c0",
+        "type": "inject",
+        "z": "c7af699a810ac2fd",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 510,
+        "y": 60,
+        "wires": [
+            [
+                "514ed2f46146b09e",
+                "0fdcc8e832814fda"
+            ]
+        ]
+    },
+    {
+        "id": "64e692e91427c82d",
+        "type": "inject",
+        "z": "c7af699a810ac2fd",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "514ed2f46146b09e",
+                "0fdcc8e832814fda"
+            ]
+        ]
+    },
+    {
+        "id": "11c3d89daca5be8d",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "c10b118336757907",
+        "name": "clases css <head>",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    //.fondo {\n    //    /* Color de fondo predeterminado */\n    //    background-color: #ff0000;\n    //    padding: 5px; /* Espaciado interno */\n    //    border-radius: 5px; /* Esquinas redondeadas */\n    //    color: white; /* Color del texto */\n    //} \n    .box {\n        border: 5px solid #000; /* Borde de 2px de grosor y color negro */\n        padding: 15px; /* Espaciado interno */\n        background-color: #f0f0f0; /* Color de fondo gris claro */\n        border-radius: 10px; /* Esquinas redondeadas */\n        //box-shadow: 6px 20px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */\n        display: flex; /* Utiliza flexbox */\n        flex-direction: column;\n        //gap: 15px; /* Espaciado entre los cuadros internos */\n        text-align: center;\n        //align-items: center;\n    }\n    .inner-box {\n        border: 2px solid #000; /* Borde de 1px de grosor y color negro */\n        padding: 5px; /* Espaciado interno */\n        background-color: #fff; /* Color de fondo blanco */\n        border-radius: 5px; /* Esquinas redondeadas */\n        //margin-bottom: 10px; /* Espaciado entre los cuadros internos */\n        flex: 1; /* Los cuadros internos se expanden igualmente */\n        // centrado\n        //text-align: center; /* Centra el texto horizontalmente */\n        //margin-top: 20px; /* Añade espacio arriba para claridad */\n    }\n    .green-bg {\n    background-color: green; /* Fondo verde */\n    }    \n    .orange-bg {\n    background-color: orange; /* Fondo naranja */\n    }\n    .red-bg {\n    background-color: red; /* Fondo rojo */\n    }\n    .gray-bg {\n    background-color: gray; /* Fondo rojo */\n    }\n    .single-box {\n    margin-bottom: 15px; /* Espacio entre la caja única y las siguientes cajas */\n            font-size: 30px;\n            font-weight: bold;\n            padding: 15px;\n    }\n    .flex-row {\n    display: flex;\n    gap: 15px;\n            font-size: 15px;\n            font-weight: normal;\n    }\n    .padd {\n        padding-top: 40px;\n        padding-bottom: 40px;\n    }\n\n</style>\n\n<script>\n    ///////sectores para clases ////////   \n    // sector verde x <= v1 var v1=20; \n    var v1 = flow.get(\"sector_div_1\");;\n    // sector naranja  v1 < x <= v2\n    var v2 = flow.get(\"sector_div_2\");;\n    // sector rojo x> v2\n    \n    function setBoxBackground(boxId, value) {\n        const box = document.getElementById(boxId);\n        clearBackground(box);        \n        if(value <= v1){\n            box.classList.add('green-bg');\n        }else if (value > v1 && value <=v2){\n            box.classList.add('orange-bg');\n        }else if (value > v2){\n            box.classList.add('red-bg');        \n        }else {\n            box.classList.add('gray-bg');\n        }\n    }\n   \n    function clearBackground(box) {\n        // Convierte la lista de clases en un array y elimina las que terminan en '-bg'\n        Array.from(box.classList).forEach(className => {\n            if (className.endsWith('-bg')) {\n                box.classList.remove(className);\n            }\n        });\n    }\n    \n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "514ed2f46146b09e",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "d": true,
+        "group": "34df9b256d31d87a",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div id=\"dynamic-background2\" class=\"fondo\">\n    {{msg.payload}}Este es un texto con fondo dinámico\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var element = document.getElementById('dynamic-background2');\n            if (payload === 0) {\n                element.style.backgroundColor = '#ff0000'; // Color para 0\n                element.style.color = '#699FF9';\n            } else if (payload === 1) {\n                element.style.backgroundColor = '#07a633'; // Color para 1\n                element.style.color = 'black';\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0fdcc8e832814fda",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "d": true,
+        "group": "34df9b256d31d87a",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div id=\"dynamic-background\" class=\"bordered-box\">\n    {{msg.payload}}Este es un texto con fondo dinámico\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var element = document.getElementById('dynamic-background');\n            if (payload === 0) {\n                element.style.backgroundColor = '#ff0000'; // Color para 0\n                element.style.color = '#699FF9';\n            } else if (payload === 1) {\n                element.style.backgroundColor = '#07a633'; // Color para 1\n                element.style.color = 'black';\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31064e5a544cdb97",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT1/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "9c8046a651785090"
+            ]
+        ]
+    },
+    {
+        "id": "9a91035a85816d8f",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "CT ACTUAL 1",
+        "func": "",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar ct_current = 1;\nflow.set(\"ctx\", ct_current);\n\n// sectores para clases\n\n// sector verde         x <= v1\nvar v1 = 20;\nflow.set(\"sector_div_1\", v1);\n// sector naranja  v1 < x <= v2\nvar v2 = 25;\nflow.set(\"sector_div_2\", v2);\n// sector rojo          x > v2\n",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c8046a651785090",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "e43414a95f422b4e"
+            ]
+        ]
+    },
+    {
+        "id": "e43414a95f422b4e",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "34df9b256d31d87a",
+        "name": "multiple 1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"1\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f50a9025b5324ec9",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT2/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "8beaf866adf44952"
+            ]
+        ]
+    },
+    {
+        "id": "8beaf866adf44952",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function 1",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "6fd47970a93389c0"
+            ]
+        ]
+    },
+    {
+        "id": "6fd47970a93389c0",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "aaf61c8b121f9302",
+        "name": "multiple 2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"2\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b215d817455febf",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT3/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "adb954f1c09b731a"
+            ]
+        ]
+    },
+    {
+        "id": "adb954f1c09b731a",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "3ce9844b582385ab"
+            ]
+        ]
+    },
+    {
+        "id": "3ce9844b582385ab",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "bd441de931f6b39c",
+        "name": "multiple 3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"3\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53936f953451ca35",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT4/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "408d1b3cf406a394"
+            ]
+        ]
+    },
+    {
+        "id": "408d1b3cf406a394",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "0a04540d973dc310"
+            ]
+        ]
+    },
+    {
+        "id": "0a04540d973dc310",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "f6aa5f2a1bf8ec9b",
+        "name": "multiple 4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"4\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0b295035aaa8ac4",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT5/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "423f8ff5d79b1d65"
+            ]
+        ]
+    },
+    {
+        "id": "423f8ff5d79b1d65",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "f7a6550b30368e91"
+            ]
+        ]
+    },
+    {
+        "id": "f7a6550b30368e91",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "79ec84f63110184e",
+        "name": "multiple 5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"5\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e468cd76e95b7f6",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT6/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "169dcb13bdbb80a9"
+            ]
+        ]
+    },
+    {
+        "id": "169dcb13bdbb80a9",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "aecd2f503b916c5d"
+            ]
+        ]
+    },
+    {
+        "id": "aecd2f503b916c5d",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "09194c32d1e11434",
+        "name": "multiple 6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"6\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16d5c59414181f09",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT7/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "2eddb71adcc13d99"
+            ]
+        ]
+    },
+    {
+        "id": "2eddb71adcc13d99",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "50a8b6abbf512b23"
+            ]
+        ]
+    },
+    {
+        "id": "50a8b6abbf512b23",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "91e7548ad30abe36",
+        "name": "multiple 7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"7\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd0d7c6bed6cfe7f",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT8/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 620,
+        "wires": [
+            [
+                "107930ebc10b1d18"
+            ]
+        ]
+    },
+    {
+        "id": "107930ebc10b1d18",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "8200ef5a14a817e1"
+            ]
+        ]
+    },
+    {
+        "id": "8200ef5a14a817e1",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "ba5a82e601c4b90b",
+        "name": "multiple 8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"8\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a50d828f62160c41",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT9/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 680,
+        "wires": [
+            [
+                "f045b8eeae67a30a"
+            ]
+        ]
+    },
+    {
+        "id": "f045b8eeae67a30a",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 680,
+        "wires": [
+            [
+                "e5f77c1de5e2099a"
+            ]
+        ]
+    },
+    {
+        "id": "e5f77c1de5e2099a",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "b1a9d5581bab8f9f",
+        "name": "multiple 9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"9\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42230989746fc6ac",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT10/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "393122b12d8be44c"
+            ]
+        ]
+    },
+    {
+        "id": "393122b12d8be44c",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "658d2739c08680cf"
+            ]
+        ]
+    },
+    {
+        "id": "658d2739c08680cf",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "d8fe9f58920bee31",
+        "name": "multiple 10",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n<script>\n    var ctxValue = \"10\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b761119946523fb8",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT11/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 800,
+        "wires": [
+            [
+                "fc7611deb51972ed"
+            ]
+        ]
+    },
+    {
+        "id": "fc7611deb51972ed",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 800,
+        "wires": [
+            [
+                "3391411b340ad491"
+            ]
+        ]
+    },
+    {
+        "id": "3391411b340ad491",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "b1665eb1fe4f6a0c",
+        "name": "multiple 11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"11\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "508efcf25d93a962",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT12/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 860,
+        "wires": [
+            [
+                "dad111563cfa635c"
+            ]
+        ]
+    },
+    {
+        "id": "dad111563cfa635c",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 860,
+        "wires": [
+            [
+                "6de729277b8a703f"
+            ]
+        ]
+    },
+    {
+        "id": "6de729277b8a703f",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "d4f49d32f3edf26e",
+        "name": "multiple 12",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"12\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42892a47dd658e44",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT13/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "bfce1252d90b26f2"
+            ]
+        ]
+    },
+    {
+        "id": "bfce1252d90b26f2",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "50a07a31a59f98f9"
+            ]
+        ]
+    },
+    {
+        "id": "50a07a31a59f98f9",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "26fd381c70913cd2",
+        "name": "multiple 13",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"13\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cba8680ef8f7e8b",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT14/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "6afa889540819634"
+            ]
+        ]
+    },
+    {
+        "id": "6afa889540819634",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "08c12e775620a84d"
+            ]
+        ]
+    },
+    {
+        "id": "08c12e775620a84d",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "3b749fce3194dbed",
+        "name": "multiple 14",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"14\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5090d1ac7063398",
+        "type": "mqtt in",
+        "z": "c7af699a810ac2fd",
+        "name": "",
+        "topic": "CT15/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "bd0869eae3276f0c"
+            ]
+        ]
+    },
+    {
+        "id": "bd0869eae3276f0c",
+        "type": "function",
+        "z": "c7af699a810ac2fd",
+        "name": "Match function",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1040,
+        "wires": [
+            [
+                "7746a16dd7b76498"
+            ]
+        ]
+    },
+    {
+        "id": "7746a16dd7b76498",
+        "type": "ui_template",
+        "z": "c7af699a810ac2fd",
+        "group": "915c4eaccf2a7fe8",
+        "name": "multiple 15",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"box\" id=\"box-group-{{ctx}}\">\n    <div class=\"inner-box single-box\" id=\"title-box{{ctx}}\">\n        titulo\n    </div>\n    <div class=\"flex-row\">\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-1\">\n            Caja 1\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-2\">\n            Caja 2\n        </div>\n        <div class=\"inner-box padd\" id=\"box{{ctx}}-3\">\n            Caja 3\n        </div>\n    </div>\n</div>\n\n<script>\n    var ctxValue = \"15\"; // Aquí asignas el valor dinámico que deseas usar\n    \n    // Función para reemplazar los marcadores {{ctx}} con el valor de ctxValue\n    function actualizarIds() {\n        // Selecciona todos los elementos que tienen IDs con {{ctx}} y los actualiza\n        var elements = document.querySelectorAll('[id*=\"{{ctx}}\"]');\n        elements.forEach(function(element) {\n        element.id = element.id.replace('{{ctx}}', ctxValue);\n        });\n    }\n    actualizarIds();\n    var div = document.getElementById(`title-box${ctxValue}`);\n    if(ctxValue < 10){\n        div.innerHTML = \"CT0\"+ctxValue;\n    }else{\n        div.innerHTML = \"CT\"+ctxValue;\n    }\n\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n        if (msg !== undefined) {\n            var boxId = `box${msg.topic}`;\n            var value = msg.payload;\n            setBoxBackground(boxId, value);\n            // Mostrar el valor en la subcaja\n            var div = document.getElementById(boxId);\n            div.textContent = \"\"+value;\n            }\n        });\n        \n    })(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    }
+]

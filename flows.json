@@ -316,19 +316,10 @@
         }
     },
     {
-        "id": "895474b1634f1c16",
-        "type": "ui_tab",
-        "name": "MONITOR DE TEMPERATURA",
-        "icon": "mi-auto_graph",
-        "order": 5,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "5f3ff06277ade9d4",
         "type": "ui_group",
         "name": "CONTROL DE TEMPERATURA T154",
-        "tab": "895474b1634f1c16",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": 9,
@@ -339,7 +330,7 @@
         "id": "fc816274ca3c1e71",
         "type": "ui_group",
         "name": "Temperatura actual",
-        "tab": "895474b1634f1c16",
+        "tab": "",
         "order": 3,
         "disp": true,
         "width": 20,

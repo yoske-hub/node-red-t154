@@ -27,7 +27,7 @@
         "id": "d82e029f4f01f966",
         "type": "tab",
         "label": "Pruebas",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },

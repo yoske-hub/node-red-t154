@@ -643,7 +643,7 @@
         "className": ""
     },
     {
-        "id": "956f8c24c685e1f3",
+        "id": "d14978ae89936532",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -653,7 +653,7 @@
         "height": 1
     },
     {
-        "id": "79aaf8d3a126c868",
+        "id": "ff0f6ba1c93105e7",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -663,7 +663,7 @@
         "height": 1
     },
     {
-        "id": "4af4507f893ec218",
+        "id": "9bc4a43dd38651e1",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -673,23 +673,23 @@
         "height": 1
     },
     {
-        "id": "95fa88463b3c190e",
+        "id": "0b4552f8efed7433",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
         "group": "c0328d4edf5e2ba2",
-        "order": 20,
-        "width": 9,
+        "order": 21,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "84ef85504d448559",
+        "id": "79f77ae2e66f02d2",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
         "group": "c0328d4edf5e2ba2",
-        "order": 22,
-        "width": 9,
+        "order": 23,
+        "width": 5,
         "height": 1
     },
     {
@@ -1261,7 +1261,7 @@
         "g": "5f75df427ead0c38",
         "name": "",
         "group": "c0328d4edf5e2ba2",
-        "order": 21,
+        "order": 22,
         "width": 9,
         "height": 1,
         "passthru": false,
@@ -2718,9 +2718,9 @@
         "g": "c3d1d63e3070eb5b",
         "name": "",
         "group": "c0328d4edf5e2ba2",
-        "order": 23,
-        "width": 0,
-        "height": 0,
+        "order": 20,
+        "width": 9,
+        "height": 1,
         "passthru": false,
         "label": "LIMPIAR GRÁFICO",
         "tooltip": "",

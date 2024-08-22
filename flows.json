@@ -2468,7 +2468,7 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\nvar msg = {};\nmsg.topic = \"SELECT id FROM `datos_temp_test` ORDER BY `id` DESC LIMIT 1\";\nreturn msg;",
         "finalize": "",
         "libs": [],
-        "x": 460,
+        "x": 420,
         "y": 1880,
         "wires": [
             [
@@ -2691,7 +2691,7 @@
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nmsg.payload = \"x\"",
+        "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 830,

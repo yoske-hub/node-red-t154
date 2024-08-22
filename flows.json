@@ -59,7 +59,7 @@
             "ee3fad87450e0685"
         ],
         "x": 14,
-        "y": 199,
+        "y": 179,
         "w": 1372,
         "h": 282
     },
@@ -176,7 +176,9 @@
             "579553c3521281ef",
             "f5e26965385d8941",
             "70fbf425fb753e41",
-            "3a542f5256ec13af"
+            "3a542f5256ec13af",
+            "c2c439b59ac2730a",
+            "a76638d03a9ae67f"
         ],
         "x": 14,
         "y": 1759,
@@ -725,7 +727,7 @@
         "oldrc": false,
         "name": "Lectura T154 v5.3",
         "x": 470,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "be567fe2199e5722"
@@ -958,7 +960,7 @@
         "finalize": "",
         "libs": [],
         "x": 960,
-        "y": 340,
+        "y": 320,
         "wires": [
             [
                 "87a72e38301405c3"
@@ -979,7 +981,7 @@
         "finalize": "",
         "libs": [],
         "x": 700,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "59a82c929d3af6cd"
@@ -1000,7 +1002,7 @@
         "finalize": "",
         "libs": [],
         "x": 990,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "9c267d8f909f4d12"
@@ -1031,7 +1033,7 @@
         "repair": false,
         "outputs": 2,
         "x": 750,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "ca12457d2d9c213f",
@@ -1057,7 +1059,7 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "52da3d2ab60674d5"
@@ -1078,7 +1080,7 @@
         "finalize": "",
         "libs": [],
         "x": 980,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "e4b73e555dcd2fbc"
@@ -1093,7 +1095,7 @@
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
         "x": 1190,
-        "y": 340,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1106,7 +1108,7 @@
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
         "x": 1190,
-        "y": 440,
+        "y": 420,
         "wires": [
             []
         ]
@@ -1127,7 +1129,7 @@
         "expiry": "",
         "broker": "27728839ccdec9b8",
         "x": 1310,
-        "y": 300,
+        "y": 280,
         "wires": []
     },
     {
@@ -1146,7 +1148,7 @@
         "expiry": "",
         "broker": "27728839ccdec9b8",
         "x": 1310,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -1157,7 +1159,7 @@
         "name": "Mostrar y almacenar datos",
         "info": "Dependiendo si la salida del programa es\nde lectura o de error, se elegira los\ndatos a manipular.",
         "x": 1050,
-        "y": 240,
+        "y": 220,
         "wires": []
     },
     {
@@ -1168,7 +1170,7 @@
         "name": "Ejecutar programa",
         "info": "Este programa y su direccion tienen que\nestar almacenados para poder ser \nejecutados correctamente con los permisos\ncorrespondiente.",
         "x": 470,
-        "y": 240,
+        "y": 220,
         "wires": []
     },
     {
@@ -1179,7 +1181,7 @@
         "name": "Ordenamiento",
         "info": "Sesga la salida obtenida para ser \ncorrectamente manipulado",
         "x": 710,
-        "y": 240,
+        "y": 220,
         "wires": []
     },
     {
@@ -1250,7 +1252,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 100,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "d21dec6b62294a72"
@@ -2187,7 +2189,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "d284bbdc889387b3"
@@ -2202,7 +2204,7 @@
         "name": "Seleccion CT",
         "info": "Este nodo selecciona el CT alamcenado en\nla variable de flujo \"ctx\" que alamcena\nel ct actual",
         "x": 270,
-        "y": 240,
+        "y": 220,
         "wires": []
     },
     {
@@ -2483,7 +2485,7 @@
         "g": "c3d1d63e3070eb5b",
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
-        "x": 650,
+        "x": 630,
         "y": 1880,
         "wires": [
             [
@@ -2701,6 +2703,41 @@
                 "f5e26965385d8941"
             ]
         ]
+    },
+    {
+        "id": "c2c439b59ac2730a",
+        "type": "status",
+        "z": "591e1866063ff770",
+        "g": "c3d1d63e3070eb5b",
+        "name": "",
+        "scope": [
+            "87a72e38301405c3",
+            "e4b73e555dcd2fbc"
+        ],
+        "x": 220,
+        "y": 1960,
+        "wires": [
+            [
+                "a76638d03a9ae67f"
+            ]
+        ]
+    },
+    {
+        "id": "a76638d03a9ae67f",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "g": "c3d1d63e3070eb5b",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1960,
+        "wires": []
     },
     {
         "id": "bc36f83ea9e843b4",

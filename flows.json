@@ -24,6 +24,14 @@
         "env": []
     },
     {
+        "id": "2198eae2b8a8723c",
+        "type": "tab",
+        "label": "Nodos en desuso",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "cc475104f9cb9ac0",
         "type": "group",
         "z": "591e1866063ff770",

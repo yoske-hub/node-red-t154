@@ -3855,7 +3855,7 @@
         "name": "",
         "topic": "CT1/#",
         "qos": "2",
-        "datatype": "buffer",
+        "datatype": "auto-detect",
         "broker": "27728839ccdec9b8",
         "nl": false,
         "rap": true,

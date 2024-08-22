@@ -2737,7 +2737,7 @@
         "z": "591e1866063ff770",
         "g": "c3d1d63e3070eb5b",
         "name": "Consulta id MAX CT1",
-        "func": "var numero = msg.topic;\n//msg.topic = `SELECT MAX(id)/3 AS data_max FROM Datos_CT${flow.get(\"ctx\")}`;\nmsg.topic = `SELECT MAX(id)/3 FROM Datos_CT${flow.get(\"ctx\")}`;\n\nreturn msg;",
+        "func": "var numero = msg.topic;\nmsg.topic = `SELECT MAX(id)/3 AS data_max FROM Datos_CT${flow.get(\"ctx\")}`;\n//msg.topic = `SELECT MAX(id)/3 FROM Datos_CT${flow.get(\"ctx\")}`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

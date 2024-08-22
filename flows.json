@@ -2995,7 +2995,7 @@
         "color": "",
         "bgcolor": "",
         "className": "",
-        "icon": "mi-database",
+        "icon": "database",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",

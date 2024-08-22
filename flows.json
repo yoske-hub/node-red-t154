@@ -197,7 +197,6 @@
             "579553c3521281ef",
             "f5e26965385d8941",
             "70fbf425fb753e41",
-            "2078c29ebce18347",
             "3a542f5256ec13af"
         ],
         "x": 14,
@@ -2718,14 +2717,14 @@
         "z": "591e1866063ff770",
         "g": "c3d1d63e3070eb5b",
         "name": "Peticion de datos CT1",
-        "func": "\nvar numero = msg.topic;\nvar lecturas = 0;\nlecturas = parseInt(numero) * 3;\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + lecturas.toString();\nreturn msg;",
+        "func": "\nvar numero = msg.payload;\nvar lecturas = 0;\nlecturas = parseInt(numero) * 3;\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + lecturas.toString();\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n var msg ={};\n msg.topic=0;\n msg.payload =0;\n return msg;",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 520,
         "y": 2680,
         "wires": [
             [
@@ -2765,7 +2764,6 @@
         "y": 2440,
         "wires": [
             [
-                "2078c29ebce18347",
                 "3a542f5256ec13af"
             ]
         ]
@@ -2959,23 +2957,6 @@
                 "2c21eb288daba11b"
             ]
         ]
-    },
-    {
-        "id": "2078c29ebce18347",
-        "type": "debug",
-        "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 2500,
-        "wires": []
     },
     {
         "id": "3a542f5256ec13af",

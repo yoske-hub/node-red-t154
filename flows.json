@@ -2717,7 +2717,7 @@
         "z": "591e1866063ff770",
         "g": "c3d1d63e3070eb5b",
         "name": "Peticion de datos CT1",
-        "func": "\nvar numero = msg.payload;\nvar lecturas = 0;\nlecturas = parseInt(numero) * 3;\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + lecturas.toString();\nreturn msg;",
+        "func": "\nvar numero = msg.payload;\nvar lecturas = 0;\nlecturas = 60 * parseInt(numero) * 3 ; // min * numero * canales\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + lecturas.toString();\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

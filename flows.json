@@ -175,24 +175,6 @@
         "h": 462
     },
     {
-        "id": "8c49e02c7fba92bc",
-        "type": "group",
-        "z": "591e1866063ff770",
-        "g": "6c29ae26a2167993",
-        "name": "VARIABLES DE FLUJO",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d78ba95e8c60c6ef",
-            "b0a9759300dd6003"
-        ],
-        "x": 54,
-        "y": 1039,
-        "w": 212,
-        "h": 142
-    },
-    {
         "id": "c3d1d63e3070eb5b",
         "type": "group",
         "z": "591e1866063ff770",
@@ -220,6 +202,24 @@
         "y": 2319,
         "w": 1372,
         "h": 462
+    },
+    {
+        "id": "8c49e02c7fba92bc",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "g": "6c29ae26a2167993",
+        "name": "VARIABLES DE FLUJO",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d78ba95e8c60c6ef",
+            "b0a9759300dd6003"
+        ],
+        "x": 54,
+        "y": 1039,
+        "w": 212,
+        "h": 142
     },
     {
         "id": "08e35faba256dbab",
@@ -2917,7 +2917,7 @@
         "height": 0,
         "name": "Numero de lecturas realizadas",
         "label": "Cantidad de lecturas",
-        "format": "{{msg.payload}}",
+        "format": "msg.payload",
         "layout": "col-center",
         "className": "",
         "style": false,

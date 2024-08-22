@@ -350,16 +350,6 @@
         "className": ""
     },
     {
-        "id": "d48119735c989c85",
-        "type": "MySQLdatabase",
-        "name": "dbyoske",
-        "host": "localhost",
-        "port": "3306",
-        "db": "dbyoske",
-        "tz": "",
-        "charset": "UTF8"
-    },
-    {
         "id": "c0328d4edf5e2ba2",
         "type": "ui_group",
         "name": "Grupo 2",

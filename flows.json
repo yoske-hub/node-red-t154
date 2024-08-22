@@ -2967,7 +2967,7 @@
         "width": 3,
         "height": 1,
         "name": "Resultado lecturas",
-        "label": "Cantidad de lecturas",
+        "label": "Cantidad de lecturas : ",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",

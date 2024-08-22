@@ -643,17 +643,17 @@
         "className": ""
     },
     {
-        "id": "c99038f73715f088",
+        "id": "fcf8b8a4a652f3a3",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
         "group": "2b570706870b675e",
-        "order": 7,
+        "order": 8,
         "width": 1,
         "height": 1
     },
     {
-        "id": "fd921a147cd7c78c",
+        "id": "13dbe26f98afc877",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -663,7 +663,7 @@
         "height": 1
     },
     {
-        "id": "8be11eac6847f521",
+        "id": "8c86f9cfd98e85b8",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -673,7 +673,7 @@
         "height": 1
     },
     {
-        "id": "b95b44c79e566261",
+        "id": "8cd87e4492307510",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -683,7 +683,7 @@
         "height": 1
     },
     {
-        "id": "fe476be2e8844cb7",
+        "id": "73e8fcecae6308e6",
         "type": "ui_spacer",
         "z": "591e1866063ff770",
         "name": "spacer",
@@ -2964,7 +2964,7 @@
         "g": "c3d1d63e3070eb5b",
         "group": "2b570706870b675e",
         "order": 9,
-        "width": 3,
+        "width": 4,
         "height": 1,
         "name": "Resultado lecturas",
         "label": "Lecturas almacenadas : ",
@@ -2986,8 +2986,8 @@
         "g": "c3d1d63e3070eb5b",
         "name": "Peticion de n° de lecturas",
         "group": "2b570706870b675e",
-        "order": 8,
-        "width": 4,
+        "order": 7,
+        "width": 3,
         "height": 1,
         "passthru": false,
         "label": "Actualizar",

@@ -643,6 +643,26 @@
         "className": ""
     },
     {
+        "id": "4118b0bd44aae0df",
+        "type": "ui_spacer",
+        "z": "591e1866063ff770",
+        "name": "spacer",
+        "group": "2b570706870b675e",
+        "order": 11,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "a107f72b6444a4f0",
+        "type": "ui_spacer",
+        "z": "591e1866063ff770",
+        "name": "spacer",
+        "group": "2b570706870b675e",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
         "id": "6ab60e39df9124a8",
         "type": "ui_media",
         "z": "591e1866063ff770",
@@ -1211,7 +1231,7 @@
         "g": "5f75df427ead0c38",
         "name": "",
         "group": "c0328d4edf5e2ba2",
-        "order": 18,
+        "order": 19,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2623,7 +2643,7 @@
         "g": "c3d1d63e3070eb5b",
         "name": "Gráfico multi-entrada",
         "group": "c0328d4edf5e2ba2",
-        "order": 17,
+        "order": 18,
         "width": 0,
         "height": 0,
         "label": "Histórico de Temperatura",
@@ -2668,7 +2688,7 @@
         "g": "c3d1d63e3070eb5b",
         "name": "",
         "group": "c0328d4edf5e2ba2",
-        "order": 18,
+        "order": 20,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2745,7 +2765,7 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\nvar msg = {};\nmsg.topic = \"SELECT id FROM `datos_temp_test` ORDER BY `id` DESC LIMIT 1\";\nreturn msg;",
         "finalize": "",
         "libs": [],
-        "x": 320,
+        "x": 460,
         "y": 2440,
         "wires": [
             [
@@ -2760,7 +2780,7 @@
         "g": "c3d1d63e3070eb5b",
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
-        "x": 490,
+        "x": 650,
         "y": 2440,
         "wires": [
             [
@@ -2858,7 +2878,7 @@
         "tooltip": "Seleccione un rango de tiempo",
         "place": "Select option",
         "group": "2b570706870b675e",
-        "order": 9,
+        "order": 10,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -2913,10 +2933,10 @@
         "z": "591e1866063ff770",
         "g": "c3d1d63e3070eb5b",
         "group": "2b570706870b675e",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "name": "Numero de lecturas realizadas",
+        "order": 13,
+        "width": 4,
+        "height": 1,
+        "name": "Resultado lecturas",
         "label": "Cantidad de lecturas",
         "format": "{{msg.payload}}",
         "layout": "col-center",
@@ -2925,7 +2945,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 970,
+        "x": 1090,
         "y": 2440,
         "wires": []
     },
@@ -2934,11 +2954,11 @@
         "type": "ui_button",
         "z": "591e1866063ff770",
         "g": "c3d1d63e3070eb5b",
-        "name": "",
+        "name": "Peticion de n° de lecturas",
         "group": "2b570706870b675e",
-        "order": 11,
-        "width": 0,
-        "height": 0,
+        "order": 12,
+        "width": 4,
+        "height": 1,
         "passthru": false,
         "label": "button",
         "tooltip": "",
@@ -2950,7 +2970,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
+        "x": 150,
         "y": 2440,
         "wires": [
             [
@@ -2971,7 +2991,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 830,
         "y": 2440,
         "wires": [
             [

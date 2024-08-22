@@ -197,7 +197,8 @@
             "579553c3521281ef",
             "f5e26965385d8941",
             "70fbf425fb753e41",
-            "2078c29ebce18347"
+            "2078c29ebce18347",
+            "3a542f5256ec13af"
         ],
         "x": 14,
         "y": 2319,
@@ -2764,8 +2765,8 @@
         "y": 2440,
         "wires": [
             [
-                "f5e26965385d8941",
-                "2078c29ebce18347"
+                "2078c29ebce18347",
+                "3a542f5256ec13af"
             ]
         ]
     },
@@ -2926,7 +2927,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 710,
+        "x": 970,
         "y": 2440,
         "wires": []
     },
@@ -2975,6 +2976,27 @@
         "x": 580,
         "y": 2500,
         "wires": []
+    },
+    {
+        "id": "3a542f5256ec13af",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "c3d1d63e3070eb5b",
+        "name": "Recuperar numero",
+        "func": "msg.payload = msg.payload[0].data_max;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 2440,
+        "wires": [
+            [
+                "f5e26965385d8941"
+            ]
+        ]
     },
     {
         "id": "bc36f83ea9e843b4",

@@ -3878,7 +3878,7 @@
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar ct_current = 1;\nflow.set(\"ctx\", ct_current);\n\n// sectores para clases\n\n// sector verde         x <= v1\nvar v1 = 20;\nflow.set(\"sector_div_1\", v1);\n// sector naranja  v1 < x <= v2\nvar v2 = 25;\nflow.set(\"sector_div_2\", v2);\n// sector rojo          x > v2\n",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar ct_current = 1;\nflow.set(\"ctx\", ct_current);\n\n// sectores para clases\n\n// sector verde         x <= v1\nvar v1 = 15;\nflow.set(\"sector_div_1\", v1);\n// sector naranja  v1 < x <= v2\nvar v2 = 18;\nflow.set(\"sector_div_2\", v2);\n// sector rojo          x > v2\n",
         "finalize": "",
         "libs": [],
         "x": 120,

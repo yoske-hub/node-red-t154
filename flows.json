@@ -27,7 +27,7 @@
         "id": "2198eae2b8a8723c",
         "type": "tab",
         "label": "Nodos en desuso",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -179,7 +179,7 @@
             "3a542f5256ec13af"
         ],
         "x": 14,
-        "y": 2319,
+        "y": 1759,
         "w": 1372,
         "h": 462
     },
@@ -200,6 +200,35 @@
         "y": 1039,
         "w": 212,
         "h": 142
+    },
+    {
+        "id": "5f75df427ead0c38",
+        "type": "group",
+        "z": "2198eae2b8a8723c",
+        "name": "Chart de Dashboard",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2210abbe1027993a",
+            "2c609feb07f16c94",
+            "905d564c21e48ff3",
+            "5ecf79e675f75af9",
+            "77c9d0256a474214",
+            "9f2287d26721d5f7",
+            "b31798962f09d2d9",
+            "e91cd2776326d02a",
+            "1c61e5d94aecf1f5",
+            "e984abb7fbf3506f",
+            "2b20ce8276a2d9d9",
+            "104105b86eb15c29",
+            "dbc4d41dc462d5d5",
+            "010656e0b1208ff6"
+        ],
+        "x": 14,
+        "y": 99,
+        "w": 1372,
+        "h": 462
     },
     {
         "id": "08e35faba256dbab",
@@ -640,6 +669,33 @@
         "order": 23,
         "width": 5,
         "height": 1
+    },
+    {
+        "id": "34841287be7d814d",
+        "type": "ui_tab",
+        "name": "Desuso",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "2132bd89357776e7",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "34841287be7d814d",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "b6f05618f675c863",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "34841287be7d814d",
+        "order": 2,
+        "disp": true,
+        "width": 6
     },
     {
         "id": "6ab60e39df9124a8",
@@ -2333,7 +2389,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1260,
-        "y": 2680,
+        "y": 2120,
         "wires": [
             []
         ]
@@ -2360,7 +2416,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 940,
-        "y": 2740,
+        "y": 2180,
         "wires": [
             [
                 "1936645ff9bb6f32"
@@ -2381,7 +2437,7 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 2680,
+        "y": 2120,
         "wires": [
             [
                 "1936645ff9bb6f32"
@@ -2402,7 +2458,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 2680,
+        "y": 2120,
         "wires": [
             [
                 "0c1b377d954bfec0"
@@ -2423,7 +2479,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 2440,
+        "y": 1880,
         "wires": [
             [
                 "ae17862cee7812af"
@@ -2438,7 +2494,7 @@
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
         "x": 650,
-        "y": 2440,
+        "y": 1880,
         "wires": [
             [
                 "3a542f5256ec13af"
@@ -2453,7 +2509,7 @@
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
         "x": 790,
-        "y": 2680,
+        "y": 2120,
         "wires": [
             [
                 "0becac32a20789fa"
@@ -2475,7 +2531,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 790,
-        "y": 2620,
+        "y": 2060,
         "wires": [
             [
                 "4759bff977aebc4e"
@@ -2496,7 +2552,7 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 2620,
+        "y": 2060,
         "wires": [
             [
                 "1936645ff9bb6f32"
@@ -2511,7 +2567,7 @@
         "name": "Maximo valor de datos",
         "info": "Muestra a modo de tooltip en la entrada\nde texto la cantidad maxima de datos\nalmacenado",
         "x": 220,
-        "y": 2360,
+        "y": 1800,
         "wires": []
     },
     {
@@ -2522,7 +2578,7 @@
         "name": "Escritura del grafico chart",
         "info": "* Acumula datos del programa ejexutado\n* Registra datos obtenidos en consulta SQL\n* LIMPIA EL GRAFICO",
         "x": 810,
-        "y": 2560,
+        "y": 2000,
         "wires": []
     },
     {
@@ -2577,7 +2633,7 @@
         "topicType": "msg",
         "className": "",
         "x": 150,
-        "y": 2680,
+        "y": 2120,
         "wires": [
             [
                 "4602a8dfb34d6425"
@@ -2603,7 +2659,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1090,
-        "y": 2440,
+        "y": 1880,
         "wires": []
     },
     {
@@ -2628,7 +2684,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 150,
-        "y": 2440,
+        "y": 1880,
         "wires": [
             [
                 "2c21eb288daba11b"
@@ -2649,7 +2705,7 @@
         "finalize": "",
         "libs": [],
         "x": 830,
-        "y": 2440,
+        "y": 1880,
         "wires": [
             [
                 "f5e26965385d8941"
@@ -4749,5 +4805,313 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2210abbe1027993a",
+        "type": "mqtt out",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27728839ccdec9b8",
+        "x": 990,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "2c609feb07f16c94",
+        "type": "ui_chart",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Gráfico multi-entrada",
+        "group": "b6f05618f675c863",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "label": "Histórico de Temperatura",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "10",
+        "ymax": "30",
+        "removeOlder": "10",
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1260,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "905d564c21e48ff3",
+        "type": "ui_button",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "",
+        "group": "b6f05618f675c863",
+        "order": 22,
+        "width": 9,
+        "height": 1,
+        "passthru": false,
+        "label": "LIMPIAR GRÁFICO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "delete_sweep",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 940,
+        "y": 520,
+        "wires": [
+            [
+                "2c609feb07f16c94"
+            ]
+        ]
+    },
+    {
+        "id": "5ecf79e675f75af9",
+        "type": "function",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "DB a chart",
+        "func": "/*\nid\t\nCanal\t\nTemperatura\t\nTrip\t\nAlarm\t\nFan\t\nFault\t\nMensaje\t\nDateTime\n*/\n\nvar datos = msg.payload;\nvar id = datos.length; \n// las filas se dividen en 3 grupos, canal(1,2,3) + fecha que es la misma de cada canal\nvar temp1 = new Array(id/3);\nvar temp2 = new Array(id/3);\nvar temp3 = new Array(id/3);\nvar datetime = new Array(id/3);\n\n// Contadores para cada canal\nlet count_1 = 0;\nlet count_2 = 0;\nlet count_3 = 0;\nlet count_time = 0;\n\nfor (let i = 0; i < id;i++) {\n    switch ( parseInt(datos[id-i-1].Canal) ) {\n        case 1:\n            temp1[count_1] = datos[id-i-1].Temperatura;\n            datetime[count_time]  = datos[id-i-1].DateTime;\n            count_1++;\n            count_time++;\n            break;\n        case 2:\n            temp2[count_2] = datos[id-i-1].Temperatura;\n            count_2++;\n            break;\n        case 3:\n            temp3[count_3] = datos[id-i-1].Temperatura;\n            count_3++;\n            break;\n        default:            \n    }\n}\n\nvar series = [\n     {  \"series\":[\"Canal 1\",\"Canal 2\",\"Canal 3\"],\n        \"data\":[\n            temp1.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp2.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp3.map((value, index) => ({ \"x\": datetime[index], \"y\": value }))\n            ],\n        \"labels\":[\"\"]\n    }\n];\n\nmsg.payload = series;\n\n//delete msg.topic; // Eliminar la propiedad 'topic' del mensaje\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 460,
+        "wires": [
+            [
+                "2c609feb07f16c94"
+            ]
+        ]
+    },
+    {
+        "id": "77c9d0256a474214",
+        "type": "ui_button",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Boton_leer",
+        "group": "2132bd89357776e7",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Obtener lecturas recientes",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "show_chart",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "9f2287d26721d5f7"
+            ]
+        ]
+    },
+    {
+        "id": "9f2287d26721d5f7",
+        "type": "function",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Peticion de datos CT1",
+        "func": "\nvar numero = msg.topic;\nnumero = parseInt(numero) * 3;\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + numero.toString();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n var msg ={};\n msg.topic=0;\n msg.payload =0;\n return msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "e984abb7fbf3506f"
+            ]
+        ]
+    },
+    {
+        "id": "b31798962f09d2d9",
+        "type": "ui_text_input",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Obtener lecturas",
+        "label": "Cantidad de datos a leer:",
+        "tooltip": "Ingrese un valor entre 1 y {{msg.payload[0].data_max}}",
+        "group": "2132bd89357776e7",
+        "order": 10,
+        "width": 9,
+        "height": 1,
+        "passthru": false,
+        "mode": "number",
+        "delay": "0",
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "77c9d0256a474214",
+                "e91cd2776326d02a"
+            ]
+        ]
+    },
+    {
+        "id": "e91cd2776326d02a",
+        "type": "function",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Consulta id MAX CT1",
+        "func": "var numero = msg.topic;\nmsg.topic = `SELECT MAX(id)/3 AS data_max FROM Datos_CT${flow.get(\"ctx\")}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\nvar msg = {};\nmsg.topic = \"SELECT id FROM `datos_temp_test` ORDER BY `id` DESC LIMIT 1\";\nreturn msg;",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "1c61e5d94aecf1f5"
+            ]
+        ]
+    },
+    {
+        "id": "1c61e5d94aecf1f5",
+        "type": "mysql",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "b31798962f09d2d9"
+            ]
+        ]
+    },
+    {
+        "id": "e984abb7fbf3506f",
+        "type": "mysql",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "5ecf79e675f75af9"
+            ]
+        ]
+    },
+    {
+        "id": "2b20ce8276a2d9d9",
+        "type": "mqtt in",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "",
+        "topic": "CT1/+/Temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 790,
+        "y": 400,
+        "wires": [
+            [
+                "104105b86eb15c29"
+            ]
+        ]
+    },
+    {
+        "id": "104105b86eb15c29",
+        "type": "function",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "mqqt a chart",
+        "func": "// Usando expresiones regulares para manejar cualquier prefijo antes de CanalX/Temp\n\nvar patron1 = `^.+/Canal1/Temp$`;\nvar patron2 = `^.+/Canal2/Temp$`;\nvar patron3 = `^.+/Canal3/Temp$`;\nvar regex = [new RegExp(patron1), new RegExp(patron2), new RegExp(patron3)];\n\nif (regex[0].test(msg.topic)) {\n    msg.topic = 'Canal 1';\n} else if (regex[1].test(msg.topic)) {\n    msg.topic = 'Canal 2';\n} else if (regex[2].test(msg.topic)) {\n    msg.topic = 'Canal 3';\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 400,
+        "wires": [
+            [
+                "2c609feb07f16c94"
+            ]
+        ]
+    },
+    {
+        "id": "dbc4d41dc462d5d5",
+        "type": "comment",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Maximo valor de datos",
+        "info": "Muestra a modo de tooltip en la entrada\nde texto la cantidad maxima de datos\nalmacenado",
+        "x": 220,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "010656e0b1208ff6",
+        "type": "comment",
+        "z": "2198eae2b8a8723c",
+        "g": "5f75df427ead0c38",
+        "name": "Escritura del grafico chart",
+        "info": "* Acumula datos del programa ejexutado\n* Registra datos obtenidos en consulta SQL\n* LIMPIA EL GRAFICO",
+        "x": 610,
+        "y": 320,
+        "wires": []
     }
 ]

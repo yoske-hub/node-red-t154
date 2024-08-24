@@ -3892,7 +3892,7 @@
         "type": "function",
         "z": "c7af699a810ac2fd",
         "name": "Match function",
-        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
+        "func": "var patron = `^CT(.+)/Canal(.+)/Temp$`; // Modifica la expresión regular para incluir grupos de captura\nvar regex = new RegExp(patron);  // Crea la expresión regular dinámica\n\nvar match = regex.exec(msg.topic); // Ejecuta la expresión regular y captura los grupos de captura\n\nif (match) {\n    // match[1] contendrá el valor capturado por (.+) después de 'CT'\n    // match[2] contendrá el valor capturado por (.+) después de 'Canal'\n\n    // Ejemplo de cómo usar estos valores\n\n    msg.topic = `${match[1]}-${match[2]}`;\n    //msg.ctx = `${match[1]}`;\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3907,9 +3907,7 @@
             ]
         ],
         "outputLabels": [
-            "1",
-            "",
-            ""
+            "1"
         ]
     },
     {

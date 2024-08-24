@@ -723,7 +723,7 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "Lectura T154 v5.3",
+        "name": "Lectura T154 v5.4",
         "x": 470,
         "y": 280,
         "wires": [
@@ -819,7 +819,7 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "Lectura T154 v5.3",
+        "name": "Lectura T154 v5.4",
         "x": 470,
         "y": 680,
         "wires": [

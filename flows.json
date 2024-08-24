@@ -56,7 +56,8 @@
             "ba823df2604b90c9",
             "0933bc28819df424",
             "d21dec6b62294a72",
-            "ee3fad87450e0685"
+            "ee3fad87450e0685",
+            "e8efdb966b990bc1"
         ],
         "x": 14,
         "y": 179,
@@ -716,7 +717,7 @@
         "type": "exec",
         "z": "591e1866063ff770",
         "g": "cc475104f9cb9ac0",
-        "command": "/home/yoske/lectura_t154_complete_v5.4",
+        "command": "/home/yoske/lectura_t154_complete_v5",
         "addpay": "payload",
         "append": "",
         "useSpawn": "false",
@@ -728,7 +729,8 @@
         "y": 280,
         "wires": [
             [
-                "be567fe2199e5722"
+                "be567fe2199e5722",
+                "e8efdb966b990bc1"
             ],
             [],
             []
@@ -812,7 +814,7 @@
         "type": "exec",
         "z": "591e1866063ff770",
         "g": "cdadd16b2b631ffb",
-        "command": "/home/yoskerasp/Desktop/ProjectCode/CodeFinal/lectura_t154_complete_v5",
+        "command": "/home/yoske/lectura_t154_complete_v5",
         "addpay": "payload",
         "append": "",
         "useSpawn": "false",
@@ -2701,6 +2703,24 @@
                 "f5e26965385d8941"
             ]
         ]
+    },
+    {
+        "id": "e8efdb966b990bc1",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "g": "cc475104f9cb9ac0",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 360,
+        "wires": []
     },
     {
         "id": "bc36f83ea9e843b4",

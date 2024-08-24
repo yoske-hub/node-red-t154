@@ -716,7 +716,7 @@
         "type": "exec",
         "z": "591e1866063ff770",
         "g": "cc475104f9cb9ac0",
-        "command": "/home/yoskerasp/Desktop/ProjectCode/CodeFinal/lectura_t154_complete_v5",
+        "command": "/home/yoskerasp/Desktop/ProjectCode/CodeFinal/lectura_t154_complete_v1",
         "addpay": "payload",
         "append": "",
         "useSpawn": "false",

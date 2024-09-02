@@ -154,36 +154,6 @@
         "h": 924.5
     },
     {
-        "id": "c3d1d63e3070eb5b",
-        "type": "group",
-        "z": "591e1866063ff770",
-        "name": "Chart de Dashboard",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "1936645ff9bb6f32",
-            "ee5ae2588dc2a6f1",
-            "0becac32a20789fa",
-            "4602a8dfb34d6425",
-            "2c21eb288daba11b",
-            "ae17862cee7812af",
-            "0c1b377d954bfec0",
-            "d897eca23e4c310b",
-            "4759bff977aebc4e",
-            "ab8e9e634a3d8f79",
-            "b7d5bfb5a3394a55",
-            "579553c3521281ef",
-            "f5e26965385d8941",
-            "70fbf425fb753e41",
-            "3a542f5256ec13af"
-        ],
-        "x": 14,
-        "y": 1759,
-        "w": 1372,
-        "h": 462
-    },
-    {
         "id": "5f75df427ead0c38",
         "type": "group",
         "z": "2198eae2b8a8723c",
@@ -229,6 +199,41 @@
         "y": 1039,
         "w": 212,
         "h": 142
+    },
+    {
+        "id": "797bac4a0d0147b0",
+        "type": "group",
+        "z": "591e1866063ff770",
+        "name": "Chart de Dashboard",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8606c922195a57db",
+            "17a2edeac27a9551",
+            "e1040c671ac38dac",
+            "b6bbbac4e266ac05",
+            "31c0e49684c6304a",
+            "d0934f0082497266",
+            "6f1ef4b09918b383",
+            "9acdfaae03e3d8b6",
+            "5a4d7863bd9c5308",
+            "373d9b72b09b056c",
+            "4a9530c6d5751a33",
+            "6208e87f9eb4201a",
+            "dd027cb6b40f974f",
+            "01b347eff924101f",
+            "fe7025bcb93cf81a",
+            "7fb16ad5ac9b898a",
+            "94ed3ca0ead4e5dd",
+            "b560ab47e86f9123",
+            "6d025d0a4f150319",
+            "298e63b74abeaf2e"
+        ],
+        "x": 14,
+        "y": 1759,
+        "w": 1372,
+        "h": 702
     },
     {
         "id": "08e35faba256dbab",
@@ -2340,13 +2345,485 @@
         ]
     },
     {
-        "id": "1936645ff9bb6f32",
+        "id": "c1cfe325cd161333",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "name": "function 1f",
+        "func": "//msg.topic = \"SELECT * FROM Datos_CT1 WHERE DateTime >= NOW() - INTERVAL 1 DAY\";\n\nvar fecha1 = flow.get('fecha_start');\nvar fecha2 = flow.get('fecha_end');\n\nmsg.topic = `SELECT * FROM Datos_CT1 WHERE DateTime BETWEEN '${fecha1}' AND '${fecha2}' ORDER BY id DESC`;\n//           SELECT * FROM `Datos_CT1` WHERE `DateTime` BETWEEN '2024-08-31 19:09:05.000000' AND '2024-09-01 19:09:05.000000' ORDER BY `id` DESC\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 2680,
+        "wires": [
+            [
+                "22b26dc3f5083b04"
+            ]
+        ]
+    },
+    {
+        "id": "22b26dc3f5083b04",
+        "type": "mysql",
+        "z": "591e1866063ff770",
+        "mydb": "746c9ff3a0553310",
+        "name": "dbCT",
+        "x": 570,
+        "y": 2680,
+        "wires": [
+            [
+                "3798895d398640f2",
+                "2f8a2fe0034616c2"
+            ]
+        ]
+    },
+    {
+        "id": "3798895d398640f2",
+        "type": "csv",
+        "z": "591e1866063ff770",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 750,
+        "y": 2680,
+        "wires": [
+            [
+                "ba00acb7d84e030a"
+            ]
+        ]
+    },
+    {
+        "id": "ba00acb7d84e030a",
+        "type": "file",
+        "z": "591e1866063ff770",
+        "name": "",
+        "filename": "datos_ct1.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 940,
+        "y": 2680,
+        "wires": [
+            [
+                "965efef3f2e01f95"
+            ]
+        ]
+    },
+    {
+        "id": "be6411e10c0eb983",
+        "type": "ui_template",
+        "z": "591e1866063ff770",
+        "group": "c0328d4edf5e2ba2",
+        "name": "",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "format": "<a href=\"/descargar-csv\" download=\"datos.csv\">\n    Descargar CSV\n</a>\n<div ng-bind-html=\"msg.payload\">\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1140,
+        "y": 2820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "187d48759880cf11",
+        "type": "http in",
+        "z": "591e1866063ff770",
+        "name": "",
+        "url": "/descargar-csv",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 2800,
+        "wires": [
+            [
+                "7044c59a35be818b"
+            ]
+        ]
+    },
+    {
+        "id": "202928538258ce35",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "name": "function 2",
+        "func": "msg.headers = {\n    \"Content-Type\": \"text/csv\",\n    \"Content-Disposition\": \"attachment; filename=datos.csv\"\n};\n// La carga útil (payload) ya contiene el contenido del archivo CSV\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 2800,
+        "wires": [
+            [
+                "da5f729fce4e1dcb"
+            ]
+        ]
+    },
+    {
+        "id": "7044c59a35be818b",
+        "type": "file in",
+        "z": "591e1866063ff770",
+        "name": "",
+        "filename": "/home/yoskerasp/datos_ct1.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 2800,
+        "wires": [
+            [
+                "202928538258ce35"
+            ]
+        ]
+    },
+    {
+        "id": "da5f729fce4e1dcb",
+        "type": "http response",
+        "z": "591e1866063ff770",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "090f42f13a1be2e4",
+        "type": "ui_date_picker",
+        "z": "591e1866063ff770",
+        "name": "",
+        "label": "Fecha: desde",
+        "group": "c0328d4edf5e2ba2",
+        "order": 21,
+        "width": 9,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 160,
+        "y": 2540,
+        "wires": [
+            [
+                "1a07441ff1a50b06"
+            ]
+        ]
+    },
+    {
+        "id": "35a58f1a9f9a41c5",
+        "type": "ui_date_picker",
+        "z": "591e1866063ff770",
+        "name": "",
+        "label": "Fecha: hasta",
+        "group": "c0328d4edf5e2ba2",
+        "order": 22,
+        "width": 9,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 170,
+        "y": 2580,
+        "wires": [
+            [
+                "380d3506ef983c3e"
+            ]
+        ]
+    },
+    {
+        "id": "4824b47efb874dac",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "1a07441ff1a50b06",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "name": "agregar topic start",
+        "func": "var timestamp = msg.payload;\nvar date = new Date(timestamp);\n\nvar year = date.getFullYear();\nvar month = (\"0\" + (date.getMonth() + 1)).slice(-2); // Los meses son de 0 a 11, por lo que sumamos 1\nvar day = (\"0\" + date.getDate()).slice(-2);\nvar hours = (\"0\" + date.getHours()).slice(-2);\nvar minutes = (\"0\" + date.getMinutes()).slice(-2);\nvar seconds = (\"0\" + date.getSeconds()).slice(-2);\n\n// Formato final para MySQL: 'YYYY-MM-DD HH:MM:SS'\nvar formattedDate = year + \"-\" + month + \"-\" + day + \" \" + hours + \":\" + minutes + \":\" + seconds;\n\nflow.set('fecha_start', formattedDate);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "380d3506ef983c3e",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "name": "agregar topic end",
+        "func": "var timestamp = msg.payload;\nvar date = new Date(timestamp);\n\nvar year = date.getFullYear();\nvar month = (\"0\" + (date.getMonth() + 1)).slice(-2); // Los meses son de 0 a 11, por lo que sumamos 1\nvar day = (\"0\" + date.getDate()).slice(-2);\nvar hours = (\"0\" + date.getHours()).slice(-2);\nvar minutes = (\"0\" + date.getMinutes()).slice(-2);\nvar seconds = (\"0\" + date.getSeconds()).slice(-2);\n\n// Formato final para MySQL: 'YYYY-MM-DD HH:MM:SS'\nvar formattedDate = year + \"-\" + month + \"-\" + day + \" \" + hours + \":\" + minutes + \":\" + seconds;\n\nflow.set('fecha_end', formattedDate);\n\nmsg.payload = formattedDate; // o msg.topic si lo necesitas para la consulta SQL\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2580,
+        "wires": [
+            [
+                "2f8a2fe0034616c2"
+            ]
+        ]
+    },
+    {
+        "id": "5fb25f94f6d0f64a",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "name": "timestamp to DateTime",
+        "func": "var timestamp = 1723680000000; // Tu timestamp en milisegundos\nvar date = new Date(timestamp);\n\nvar year = date.getFullYear();\nvar month = (\"0\" + (date.getMonth() + 1)).slice(-2); // Los meses son de 0 a 11, por lo que sumamos 1\nvar day = (\"0\" + date.getDate()).slice(-2);\nvar hours = (\"0\" + date.getHours()).slice(-2);\nvar minutes = (\"0\" + date.getMinutes()).slice(-2);\nvar seconds = (\"0\" + date.getSeconds()).slice(-2);\n\n// Formato final para MySQL: 'YYYY-MM-DD HH:MM:SS'\nvar formattedDate = year + \"-\" + month + \"-\" + day + \" \" + hours + \":\" + minutes + \":\" + seconds;\n\nmsg.payload = formattedDate; // o msg.topic si lo necesitas para la consulta SQL\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 2580,
+        "wires": [
+            [
+                "4824b47efb874dac"
+            ]
+        ]
+    },
+    {
+        "id": "44239dc6ecea89f7",
+        "type": "inject",
+        "z": "591e1866063ff770",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 800,
+        "y": 2580,
+        "wires": [
+            [
+                "5fb25f94f6d0f64a"
+            ]
+        ]
+    },
+    {
+        "id": "2c1e6986c402907f",
+        "type": "inject",
+        "z": "591e1866063ff770",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 2680,
+        "wires": [
+            [
+                "c1cfe325cd161333"
+            ]
+        ]
+    },
+    {
+        "id": "965efef3f2e01f95",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "a784a3a9b0370e8d",
+        "type": "catch",
+        "z": "591e1866063ff770",
+        "name": "",
+        "scope": [
+            "7044c59a35be818b"
+        ],
+        "uncaught": false,
+        "x": 670,
+        "y": 2920,
+        "wires": [
+            [
+                "8fa81a10caacb5f6"
+            ]
+        ]
+    },
+    {
+        "id": "8ea75b6d921e185e",
+        "type": "complete",
+        "z": "591e1866063ff770",
+        "name": "",
+        "scope": [
+            "7044c59a35be818b"
+        ],
+        "uncaught": false,
+        "x": 690,
+        "y": 2960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fa81a10caacb5f6",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "2f8a2fe0034616c2",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "cad8539f6e87c6ed",
+        "type": "inject",
+        "z": "591e1866063ff770",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "fecha_start",
+        "payloadType": "flow",
+        "x": 160,
+        "y": 2940,
+        "wires": [
+            [
+                "8ed7e085663168ea"
+            ]
+        ]
+    },
+    {
+        "id": "8ed7e085663168ea",
+        "type": "debug",
+        "z": "591e1866063ff770",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 2940,
+        "wires": []
+    },
+    {
+        "id": "8606c922195a57db",
         "type": "ui_chart",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Gráfico multi-entrada",
         "group": "c0328d4edf5e2ba2",
-        "order": 18,
+        "order": 17,
         "width": 0,
         "height": 0,
         "label": "Histórico de Temperatura",
@@ -2385,13 +2862,13 @@
         ]
     },
     {
-        "id": "ee5ae2588dc2a6f1",
+        "id": "17a2edeac27a9551",
         "type": "ui_button",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "",
         "group": "c0328d4edf5e2ba2",
-        "order": 20,
+        "order": 19,
         "width": 9,
         "height": 1,
         "passthru": false,
@@ -2409,18 +2886,18 @@
         "y": 2180,
         "wires": [
             [
-                "1936645ff9bb6f32"
+                "8606c922195a57db"
             ]
         ]
     },
     {
-        "id": "0becac32a20789fa",
+        "id": "e1040c671ac38dac",
         "type": "function",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "DB a chart",
-        "func": "/*\nid\t\nCanal\t\nTemperatura\t\nTrip\t\nAlarm\t\nFan\t\nFault\t\nMensaje\t\nDateTime\n*/\n\nvar datos = msg.payload;\nvar id = datos.length; \n// las filas se dividen en 3 grupos, canal(1,2,3) + fecha que es la misma de cada canal\nvar temp1 = new Array(id/3);\nvar temp2 = new Array(id/3);\nvar temp3 = new Array(id/3);\nvar datetime = new Array(id/3);\n\n// Contadores para cada canal\nlet count_1 = 0;\nlet count_2 = 0;\nlet count_3 = 0;\nlet count_time = 0;\n\nfor (let i = 0; i < id;i++) {\n    switch ( parseInt(datos[id-i-1].Canal) ) {\n        case 1:\n            temp1[count_1] = datos[id-i-1].Temperatura;\n            datetime[count_time]  = datos[id-i-1].DateTime;\n            count_1++;\n            count_time++;\n            break;\n        case 2:\n            temp2[count_2] = datos[id-i-1].Temperatura;\n            count_2++;\n            break;\n        case 3:\n            temp3[count_3] = datos[id-i-1].Temperatura;\n            count_3++;\n            break;\n        default:            \n    }\n}\n\nvar series = [\n     {  \"series\":[\"Canal 1\",\"Canal 2\",\"Canal 3\"],\n        \"data\":[\n            temp1.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp2.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp3.map((value, index) => ({ \"x\": datetime[index], \"y\": value }))\n            ],\n        \"labels\":[\"\"]\n    }\n];\n\nmsg.payload = series;\n\n//delete msg.topic; // Eliminar la propiedad 'topic' del mensaje\n\nreturn msg;\n\n",
-        "outputs": 1,
+        "func": "/*\nid\t\nCanal\t\nTemperatura\t\nTrip\t\nAlarm\t\nFan\t\nFault\t\nMensaje\t\nDateTime\n*/\n\nvar datos = msg.payload;\nvar id = datos.length; \n// las filas se dividen en 3 grupos, canal(1,2,3) + fecha que es la misma de cada canal\nvar temp1 = new Array(id/3);\nvar temp2 = new Array(id/3);\nvar temp3 = new Array(id/3);\nvar datetime = new Array(id/3);\n// agrego los ventiladores\nvar fan1 = new Array(id/3);\nvar fan2 = new Array(id/3);\nvar fan3 = new Array(id/3);\n\n\n// Contadores para cada canal\nlet count_1 = 0;\nlet count_2 = 0;\nlet count_3 = 0;\nlet count_time = 0;\nlet count_fan1 = 0;\nlet count_fan2 = 0;\nlet count_fan3 = 0;\n\nfor (let i = 0; i < id;i++) {\n    switch ( parseInt(datos[id-i-1].Canal) ) {\n        case 1:\n            temp1[count_1] = datos[id-i-1].Temperatura;\n            datetime[count_time]  = datos[id-i-1].DateTime;\n            count_1++;\n            count_time++;\n            fan1[count_fan1] = datos[id-i-1].Fan;\n            count_fan1++;\n            break;\n        case 2:\n            temp2[count_2] = datos[id-i-1].Temperatura;\n            count_2++;\n            fan2[count_fan2] = datos[id-i-1].Fan;\n            count_fan2++;\n            break;\n        case 3:\n            temp3[count_3] = datos[id-i-1].Temperatura;\n            count_3++;\n            fan3[count_fan3] = datos[id-i-1].Fan;\n            count_fan3++;\n            break;\n        default:            \n    }\n}\n\nvar series_temp = [\n     {  \"series\":[\"Canal 1\",\"Canal 2\",\"Canal 3\"],\n        \"data\":[\n            temp1.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp2.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            temp3.map((value, index) => ({ \"x\": datetime[index], \"y\": value }))\n            ],\n        \"labels\":[\"\"]\n    }\n];\n\nvar series_fan = [\n     {  \"series\":[\"Fan 1\",\"Fan 2\",\"Fan 3\"],\n        \"data\":[\n            fan1.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            fan2.map((value, index) => ({ \"x\": datetime[index], \"y\": value })),\n            fan3.map((value, index) => ({ \"x\": datetime[index], \"y\": value }))\n            ],\n        \"labels\":[\"\"]\n    }\n];\n\n// Crear los mensajes para cada gráfico\nvar msg1 = { payload: series_temp };\nvar msg2 = { payload: series_fan };\n\n// Enviar a las dos salidas\nreturn [msg1, msg2];\n\n\n",
+        "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -2430,15 +2907,18 @@
         "y": 2120,
         "wires": [
             [
-                "1936645ff9bb6f32"
+                "8606c922195a57db"
+            ],
+            [
+                "6d025d0a4f150319"
             ]
         ]
     },
     {
-        "id": "4602a8dfb34d6425",
+        "id": "b6bbbac4e266ac05",
         "type": "function",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Peticion de datos CT1",
         "func": "\nvar numero = msg.payload;\nvar lecturas = 0;\nlecturas = 60 * parseInt(numero) * 3 ; // min * numero * canales\nmsg.topic = `SELECT * FROM Datos_CT${flow.get(\"ctx\")} ORDER BY id DESC LIMIT ` + lecturas.toString();\nreturn msg;",
         "outputs": 1,
@@ -2447,19 +2927,19 @@
         "initialize": "// El código añadido aquí se ejecutará una vez\n// cuando el nodo es iniciado.\n var msg ={};\n msg.topic=0;\n msg.payload =0;\n return msg;",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 400,
         "y": 2120,
         "wires": [
             [
-                "0c1b377d954bfec0"
+                "6f1ef4b09918b383"
             ]
         ]
     },
     {
-        "id": "2c21eb288daba11b",
+        "id": "31c0e49684c6304a",
         "type": "function",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Consulta id MAX CT1",
         "func": "var numero = msg.topic;\nmsg.topic = `SELECT MAX(id)/3 AS data_max FROM Datos_CT${flow.get(\"ctx\")}`;\n//msg.topic = `SELECT MAX(id)/3 FROM Datos_CT${flow.get(\"ctx\")}`;\n\nreturn msg;",
         "outputs": 1,
@@ -2472,45 +2952,45 @@
         "y": 1880,
         "wires": [
             [
-                "ae17862cee7812af"
+                "d0934f0082497266"
             ]
         ]
     },
     {
-        "id": "ae17862cee7812af",
+        "id": "d0934f0082497266",
         "type": "mysql",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
         "x": 630,
         "y": 1880,
         "wires": [
             [
-                "3a542f5256ec13af"
+                "fe7025bcb93cf81a"
             ]
         ]
     },
     {
-        "id": "0c1b377d954bfec0",
+        "id": "6f1ef4b09918b383",
         "type": "mysql",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "mydb": "746c9ff3a0553310",
         "name": "dbCT",
-        "x": 790,
+        "x": 590,
         "y": 2120,
         "wires": [
             [
-                "0becac32a20789fa"
+                "e1040c671ac38dac"
             ]
         ]
     },
     {
-        "id": "d897eca23e4c310b",
+        "id": "9acdfaae03e3d8b6",
         "type": "mqtt in",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "",
         "topic": "CT1/+/Temp",
         "qos": "2",
@@ -2524,15 +3004,15 @@
         "y": 2060,
         "wires": [
             [
-                "4759bff977aebc4e"
+                "5a4d7863bd9c5308"
             ]
         ]
     },
     {
-        "id": "4759bff977aebc4e",
+        "id": "5a4d7863bd9c5308",
         "type": "function",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "mqqt a chart",
         "func": "// Usando expresiones regulares para manejar cualquier prefijo antes de CanalX/Temp\n\nvar patron1 = `^.+/Canal1/Temp$`;\nvar patron2 = `^.+/Canal2/Temp$`;\nvar patron3 = `^.+/Canal3/Temp$`;\nvar regex = [new RegExp(patron1), new RegExp(patron2), new RegExp(patron3)];\n\nif (regex[0].test(msg.topic)) {\n    msg.topic = 'Canal 1';\n} else if (regex[1].test(msg.topic)) {\n    msg.topic = 'Canal 2';\n} else if (regex[2].test(msg.topic)) {\n    msg.topic = 'Canal 3';\n}\n\nreturn msg;",
         "outputs": 1,
@@ -2545,15 +3025,15 @@
         "y": 2060,
         "wires": [
             [
-                "1936645ff9bb6f32"
+                "8606c922195a57db"
             ]
         ]
     },
     {
-        "id": "ab8e9e634a3d8f79",
+        "id": "373d9b72b09b056c",
         "type": "comment",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Maximo valor de datos",
         "info": "Muestra a modo de tooltip en la entrada\nde texto la cantidad maxima de datos\nalmacenado",
         "x": 220,
@@ -2561,10 +3041,10 @@
         "wires": []
     },
     {
-        "id": "b7d5bfb5a3394a55",
+        "id": "4a9530c6d5751a33",
         "type": "comment",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Escritura del grafico chart",
         "info": "* Acumula datos del programa ejexutado\n* Registra datos obtenidos en consulta SQL\n* LIMPIA EL GRAFICO",
         "x": 810,
@@ -2572,10 +3052,10 @@
         "wires": []
     },
     {
-        "id": "579553c3521281ef",
+        "id": "6208e87f9eb4201a",
         "type": "ui_dropdown",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Leer por rango de tiempo",
         "label": "Obtener lecturas recientes",
         "tooltip": "Rango de tiempo",
@@ -2626,15 +3106,15 @@
         "y": 2120,
         "wires": [
             [
-                "4602a8dfb34d6425"
+                "b6bbbac4e266ac05"
             ]
         ]
     },
     {
-        "id": "f5e26965385d8941",
+        "id": "dd027cb6b40f974f",
         "type": "ui_text",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "group": "2b570706870b675e",
         "order": 8,
         "width": 6,
@@ -2653,10 +3133,10 @@
         "wires": []
     },
     {
-        "id": "70fbf425fb753e41",
+        "id": "01b347eff924101f",
         "type": "ui_button",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Peticion de n° de lecturas",
         "group": "2b570706870b675e",
         "order": 7,
@@ -2677,15 +3157,15 @@
         "y": 1880,
         "wires": [
             [
-                "2c21eb288daba11b"
+                "31c0e49684c6304a"
             ]
         ]
     },
     {
-        "id": "3a542f5256ec13af",
+        "id": "fe7025bcb93cf81a",
         "type": "function",
         "z": "591e1866063ff770",
-        "g": "c3d1d63e3070eb5b",
+        "g": "797bac4a0d0147b0",
         "name": "Recuperar numero",
         "func": "msg.payload = msg.payload[0].data_max;\nreturn msg;",
         "outputs": 1,
@@ -2698,7 +3178,135 @@
         "y": 1880,
         "wires": [
             [
-                "f5e26965385d8941"
+                "dd027cb6b40f974f"
+            ]
+        ]
+    },
+    {
+        "id": "7fb16ad5ac9b898a",
+        "type": "comment",
+        "z": "591e1866063ff770",
+        "g": "797bac4a0d0147b0",
+        "name": "Escritura del grafico chart trip alarm fault",
+        "info": "* Acumula datos del programa ejexutado\n* Registra datos obtenidos en consulta SQL\n* LIMPIA EL GRAFICO",
+        "x": 1100,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "94ed3ca0ead4e5dd",
+        "type": "mqtt in",
+        "z": "591e1866063ff770",
+        "g": "797bac4a0d0147b0",
+        "name": "",
+        "topic": "CT1/+/Temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27728839ccdec9b8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 750,
+        "y": 2300,
+        "wires": [
+            [
+                "298e63b74abeaf2e"
+            ]
+        ]
+    },
+    {
+        "id": "b560ab47e86f9123",
+        "type": "ui_button",
+        "z": "591e1866063ff770",
+        "g": "797bac4a0d0147b0",
+        "name": "",
+        "group": "c0328d4edf5e2ba2",
+        "order": 19,
+        "width": 9,
+        "height": 1,
+        "passthru": false,
+        "label": "LIMPIAR GRÁFICO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "delete_sweep",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 900,
+        "y": 2420,
+        "wires": [
+            [
+                "6d025d0a4f150319"
+            ]
+        ]
+    },
+    {
+        "id": "6d025d0a4f150319",
+        "type": "ui_chart",
+        "z": "591e1866063ff770",
+        "g": "797bac4a0d0147b0",
+        "name": "Gráfico multi-entrada",
+        "group": "c0328d4edf5e2ba2",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "label": "Histórico de Temperatura",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1220,
+        "y": 2360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "298e63b74abeaf2e",
+        "type": "function",
+        "z": "591e1866063ff770",
+        "g": "797bac4a0d0147b0",
+        "name": "mqqt a chart",
+        "func": "// Usando expresiones regulares para manejar cualquier prefijo antes de CanalX/Temp\n\nvar patron1 = `^.+/Canal1/Temp$`;\nvar patron2 = `^.+/Canal2/Temp$`;\nvar patron3 = `^.+/Canal3/Temp$`;\nvar regex = [new RegExp(patron1), new RegExp(patron2), new RegExp(patron3)];\n\nif (regex[0].test(msg.topic)) {\n    msg.topic = 'Canal 1';\n} else if (regex[1].test(msg.topic)) {\n    msg.topic = 'Canal 2';\n} else if (regex[2].test(msg.topic)) {\n    msg.topic = 'Canal 3';\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 2300,
+        "wires": [
+            [
+                "6d025d0a4f150319"
             ]
         ]
     },
